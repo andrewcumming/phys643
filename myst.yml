@@ -1,0 +1,24 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: PHYS 643 Astrophysical Fluids
+  # description:
+  keywords: []
+  authors: []
+  # github:
+  # bibliography: []
+  toc:
+    - file: index.md
+    - title: 'Course outline'
+      file: outline.md
+site:
+  template: book-theme
+  # title:
+  # options:
+  #   logo: my_logo.png
+  nav: []
+  actions:
+    - title: Learn More
+      url: https://mystmd.org/guide
+  domains: []
+ 
