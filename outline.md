@@ -81,6 +81,7 @@ Some useful links:
 
 - [Astrophysics source code library](http://ascl.net/)
 - Links to some hydro/MHD and other codes: [Dedalus](https://dedalus-project.org/), [Athena++](https://www.athena-astro.app/), [PLUTO](https://plutocode.ph.unito.it/), [PENCIL](https://pencil-code.nordita.org/), [Castro](https://amrex-astro.github.io/Castro/), [Einstein Toolkit](https://einsteintoolkit.org/mp.html), [MITgcm](https://mitgcm.readthedocs.io/en/latest/), [MESA stellar evolution code](http://mesastar.org/), [GIZMO](http://www.tapir.caltech.edu/~phopkins/Site/GIZMO.html), [RAMSES](https://ramses.cnrs.fr/), [AREPO](https://arepo-code.org/wp-content/userguide/index.html)
+- [Lectures on Numerical Fluid Dynamics](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2011/index.shtml) by V. Springel and C. P. Dullemond at the University of Heidelberg.
 
 
 ## McGill policy statements
