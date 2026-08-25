@@ -9,7 +9,7 @@ A background of undergraduate physics is assumed, but no prior knowledge of flui
 
 ## Time and place
 
-Tuesday Thursday 1-2.30pm, Sherbrooke 680 room 1261
+Tuesday Thursday 1-2.30pm, BRONF 310.
 
 First class: Tuesday September 1
 
