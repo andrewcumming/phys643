@@ -1,9 +1,5 @@
 # Week 1: Introduction
 
-Link for results:
-[Google sheet](https://docs.google.com/spreadsheets/d/175f5WR4YxWMDmOOaCZcyE4m_WhxDUvsBLCpV6AUmokA/edit?usp=sharing)
-
-
 In these notes, we introduce the fluid equations, laying the groundwork for the specific topics in future weeks.
 
 ## What is a fluid?
@@ -22,6 +18,9 @@ This is much smaller than the radius of the sun $R_\odot\approx 7\times 10^{10}\
 :::{admonition} Exercise
 :class: tip
 Evaluate $\lambda$ for different astrophysical environments. Are there cases where a fluid description may not be appropriate?
+
+Link for results:
+[Google sheet](https://docs.google.com/spreadsheets/d/175f5WR4YxWMDmOOaCZcyE4m_WhxDUvsBLCpV6AUmokA/edit?usp=sharing)
 :::
 
 ## The continuity equation
