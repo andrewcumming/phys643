@@ -1,5 +1,8 @@
 # Week 1: Introduction
 
+[Google sheet](https://docs.google.com/spreadsheets/d/175f5WR4YxWMDmOOaCZcyE4m_WhxDUvsBLCpV6AUmokA/edit?usp=sharing)
+
+
 In these notes, we introduce the fluid equations, laying the groundwork for the specific topics in future weeks.
 
 ## What is a fluid?
