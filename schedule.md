@@ -3,7 +3,7 @@
 | Date | Topic | Materials |
 |---|---|---|
 | T Sep 1 | First meeting and overview of the course | |
-| Th Sep 3 | Introduction to the fluid equations | [Reading](week1/week1_reading) |
+| Th Sep 3 | Introduction to the fluid equations | [Reading](week1-reading) |
 | T Sep 8 | |
 | Th Sep 10 | Cold stars |  |
 | T Sep 15 | *Presentations 1* | |
