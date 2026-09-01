@@ -156,6 +156,8 @@ The first is the energy dissipation rate from ohmic heating. This converts magne
 
 - In equation {eq}`eq:simple_momentum`, there are two forces on the right hand side. Which of these are body forces and which are surface forces. How can you tell?
 
+- Draw a cartoon to illustrate the action of shear viscosity.
+
 - Explain what is meant by *flux freezing*.
 
 - Write out the equations of magnetohydrodynamics.
