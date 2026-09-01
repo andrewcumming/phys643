@@ -1,5 +1,6 @@
 # Week 1: Introduction
 
+Link for results:
 [Google sheet](https://docs.google.com/spreadsheets/d/175f5WR4YxWMDmOOaCZcyE4m_WhxDUvsBLCpV6AUmokA/edit?usp=sharing)
 
 
