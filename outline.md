@@ -40,18 +40,22 @@ The emphasis will be on understanding the basic physical ideas and applying them
 ## Assessment
 
 The final grade will be based on:
+- Weekly reading questions (10%)
 - In-class presentations (20%)
-- Computational exercises (40%)
+- Computational exercises (30%)
 - Project (40%)
+
+**Reading questions**:
+Each week's reading will have a set of questions that will help you think about the material and highlight the most important points. These must be submitted on myCourses before the start of each Thursday's class.
 
 **Presentation**:
 One paper presentation per student during the term.
 
 **Computational exercises**:
-Computational exercises will be done individually as homework (there will be 3 or 4 of these).
+Computational exercises will be done individually as homework (there will be 3 of these).
 
 **Project**:
-The projects will be done in groups of three. The goal is to run a simulation of an astrophysical system and analyze the results. All groups will present their plan for the project on October 8 in class. Final presentations will be split over two classes on Nov 26 and Dec 1.
+The projects will be done in groups of three. The goal is to run a simulation of an astrophysical system and analyze the results. **All groups will present their plan for the project on October 8 in class**. Final presentations will be split over two classes on Nov 26 and Dec 1.
 
 Here are some examples of past projects to give you some ideas:
 - Colliding stellar winds with the PLUTO code
