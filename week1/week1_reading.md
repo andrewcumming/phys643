@@ -40,7 +40,7 @@ If there is a net mass flux across the surface, the mass contained within the vo
 An important operator is the *advective derivative*, also known as the Lagrangian derivative. It represents the rate of change of a quantity following along with the fluid element (Lagrangian approach) rather than asking what is the rate of change of the quantity at a fixed point in space (Eulerian approach).
 We will write it as
 $${D\over Dt} = {\partial \over\partial t} + \vec{u}\cdot\vec{\nabla}.$$
-To see why it has this form, consider moving with a fluid element initially at location $\vec{r}$. After a time $Dt$, its location has moved to $\vec{r}+\vec{u}dt$. If there were no change in the density of the fluid element, then we must have $\rho(\vec{r}+\vec{u}Dt, t+Dt)=\rho(\vec{r},t)$. Otherwise, there will be a change in the fluid element's density 
+To see why it has this form, consider moving with a fluid element initially at location $\vec{r}$. After a time $Dt$, its location has moved to $\vec{r}+\vec{u}Dt$. If there were no change in the density of the fluid element, then we must have $\rho(\vec{r}+\vec{u}Dt, t+Dt)=\rho(\vec{r},t)$. Otherwise, there will be a change in the fluid element's density 
 $$D\rho = \rho(\vec{r}+\vec{u}Dt, t+Dt) - \rho(\vec{r},t) = {\partial \rho\over\partial t} Dt + \vec{u}\cdot\vec{\nabla}\rho Dt.$$
 Using the advective derivative, equation [](#eq:continuity1) can be rewritten
 $${D\rho\over Dt} = -\rho\vec{\nabla}\cdot\vec{u}\label{eq:continuity},$$
