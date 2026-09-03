@@ -17,6 +17,11 @@ project:
         - title: 'Reading'
           file: week1/week1_reading.md
         - file: week1/week1_exercises.md
+    - title: 'Week 2: Cold Stars'
+      children:
+        - title: 'Reading'
+          file: week2/week2_reading.md
+        - file: week2/week2_papers.md
 site:
   template: book-theme
   # title:
