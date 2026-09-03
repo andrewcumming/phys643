@@ -16,6 +16,7 @@ project:
       children:
         - title: 'Reading'
           file: week1/week1_reading.md
+        - file: week1/week1_exercises.md
 site:
   template: book-theme
   # title:
