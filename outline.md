@@ -49,7 +49,7 @@ The final grade will be based on:
 Each week's reading will have a set of questions that will help you think about the material and highlight the most important points. These must be submitted on myCourses before the start of each Thursday's class.
 
 **Presentation**:
-One paper presentation per student during the term.
+One paper presentation (15 min) per student during the term. The presentation can use slides or blackboard as appropriate, and should summarize the main points of the paper(s) and explain how they are connected to the class notes.
 
 **Computational exercises**:
 Computational exercises will be done individually as homework (there will be 3 of these).
