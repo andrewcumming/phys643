@@ -22,7 +22,7 @@ Compare with the induction equation for MHD. What conclusion do you come to abou
 
 ### 3. Magnetic field winding
 
-Consider a spherical star which is differentially rotating such that the fluid velocity is $\vec{u}=\hat{\phi}\  R \Omega(R)$, where we use cylindrical coordinates $(R,\phi,z)$ with $z$ along the rotation axis. A poloidal magnetic field $(B_R(R,z), 0, B_z(R,z))$ threads the star initially.
+Consider a spherical star which is differentially rotating such that the fluid velocity is $\vec{u}=\hat{\phi}\  R \Omega(R)$, where we use cylindrical coordinates $(R,\phi,z)$ with $z$ along the rotation axis. A poloidal magnetic field $(B_R(R,z), 0, B_z(R,z))$ threads the star initially. For this question, neglect the ohmic diffusion term in the induction equation.
 
 (a) First assume that the velocity does not change over time. What does the induction equation imply for the subsequent evolution of the field? Explain your result physically.
 
@@ -30,4 +30,4 @@ Consider a spherical star which is differentially rotating such that the fluid v
 
 ### 4. Electric field in an atmosphere
 
-Consider a plane-parallel atmosphere of fully ionized hydrogen gas. By writing down the momentum equations for the protons and electrons separately, show that (1) the structure of the atmosphere is given by $dP/dz=-\rho g$, where $P$ is the sum of the electron and proton pressures, and (2) there is an electric field in the atmosphere. What is the value of the electric field, and what is its role?
+Consider a plane-parallel atmosphere of fully ionized hydrogen gas in hydrostatic balance. By writing down the momentum equations for the protons and electrons separately, show that (1) the structure of the atmosphere is given by $dP/dz=-\rho g$, where $P$ is the sum of the electron and proton pressures, and (2) there is an electric field in the atmosphere. What is the value of the electric field, and what is its role?
