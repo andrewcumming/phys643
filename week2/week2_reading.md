@@ -24,7 +24,7 @@ To solve the equations, we need a relation between $P$ and $\rho$ — the equati
 
 ## Back of the envelope stars and planets
 
-We can make an estimate of the structure to get the scalings by writing $${dP\over dr}\approx {P_c\over R}$$ and $$\rho g\approx {M\over R^3}{GM\over R^2},$$ where $P_c$ is the central pressure and $R$ is the radius. This gives a formula for the central pressure in terms of the mass and radius of the object $$P_c\approx {GM^2\over R^4}.$$ Note that we've dropped prefactors of order unity here so this is just a rough estimate (we'll see later that polytropes have exactly this scaling but with a numerical prefactor that depends on $n$).
+We can make an estimate of the structure to get the scalings by writing $${dP\over dr}\approx {P_c\over R}\label{eq:pressure_approx}$$ and $$\rho g\approx {M\over R^3}{GM\over R^2},$$ where $P_c$ is the central pressure and $R$ is the radius. This gives a formula for the central pressure in terms of the mass and radius of the object $$P_c\approx {GM^2\over R^4}.$$ Note that we've dropped prefactors of order unity here so this is just a rough estimate (we'll see later that polytropes have exactly this scaling but with a numerical prefactor that depends on $n$).
 
 For an ideal gas of hydrogen, we can write the pressure as $P=\rho k_BT/m_p$. Using the formula for $P_c$ and again writing $\rho\approx M/R^3$ gives the central temperature $$T_c\approx {GMm_p\over k_BR}.$$ For the Sun, this gives $T_c\approx 2\times 10^7\ \mathrm{K}$ which is close to the actual value $\approx 1.5\times 10^7\ \mathrm{K}$.
 
@@ -69,12 +69,12 @@ $$n = \int {8\pi p^2\over h^3 v} e^{\mu/k_BT} e^{-E/k_BT} dE$$
 which corresponds to a Maxwell-Boltzmann distribution of particle energies, $f(E)\propto \exp(-E/k_BT)$. Doing the integral then gives an expression for the chemical potential in terms of the number density $$\mu = k_BT \ln\left({n\over 2n_Q}\right)$$ where "n-quantum" is $$n_Q = \left({2\pi mk_BT\over h^2}\right)^{3/2}.$$
 The non-degenerate limit applies when $n\ll n_Q$, giving $\mu/k_BT\ll -1$.
 
-It is straightforward to show that equations {eq}`eq:Pintegral` and {eq}`eq:Uintegral` give the usual results for an ideal gas $$P=nk_BT \hspace{1cm} U = {3\over 2}nk_BT.$$
+In this same limit, using the same approximation of $f(E)$, it is straightforward to show that equations {eq}`eq:Pintegral` and {eq}`eq:Uintegral` give the usual results for an ideal gas $$P=nk_BT \hspace{1cm} U = {3\over 2}nk_BT.$$
 Pressure and internal energy density are related by $P=(2/3)U$, a consequence of the fact that we've assumed the particles are non-relativistic. Writing $U = nm\langle v^2\rangle/2$ gives $\langle v^2\rangle = 3k_BT/m$. The mean speed is $\langle v\rangle = (8k_BT/\pi m)^{1/2}$.
 
 ### Completely-degenerate gas
 
-For a degeneratue gas, the chemical potential is large and positive, $\mu \gg k_BT$. The occupation number $f(E)$ becomes a step function: $f(E) = 1$ for $E<\mu$ and $f(E)=0$ for $E>\mu$, i.e. only the states with energy below the chemical potential are occupied. In this limit, $\mu$ is referred to as the *Fermi energy* $E_F$. 
+For a degenerate gas, the chemical potential is large and positive, $\mu \gg k_BT$. In the $T\rightarrow 0$ limit, the occupation number $f(E)$ becomes a step function: $f(E) = 1$ for $E<\mu$ and $f(E)=0$ for $E>\mu$, i.e. only the states with energy below the chemical potential are occupied. In this limit, $\mu$ is referred to as the *Fermi energy* $E_F$. 
 
 In this case, it is simplest to write equation {eq}`eq:nintegral` as an integral over momentum rather than energy, giving
 $$n = \int_0^{p_F} {8\pi p^2 dp\over h^3} = {1\over 3\pi^2}\left({p_F\over \hbar}\right)^3.$$
@@ -89,7 +89,7 @@ The pressure is $P=(2/5) nE_F\propto n^{5/3}$ in the non-relativistic limit; $P=
 Inside compact objects, there is a transition from non-degenerate matter in the low density regions at the surface to degenerate matter at high densities. Calculating this transition requires evaluating the integrals for $n$, $P$, and $U$ directly including the full form of $f(E)$ without approximations. For non-relativistic particles, the integrals can be written in terms of the *Fermi integrals* $F_n(\mu/k_BT)$ where $$F_n(x) = \int_0^\infty {t^n dt\over 1+e^{t-x}},$$ giving
 $$n = {\sqrt{2}(mk_BT)^{3/2}\over \hbar^3\pi^2} F_{1/2}(\mu/k_BT)$$
 $$U = {\sqrt{2}(mk_BT)^{3/2}\over \hbar^3\pi^2} F_{3/2}(\mu/k_BT)$$
-and $P=(2/3)U$. [Antia (1993)](https://ui.adsabs.harvard.edu/abs/1993ApJS...84..101A/abstract) provides some useful fitting formulae for the Fermi integrals in case you ever find yourself in the partially-degeneragte limit. There is also a useful interpolation formula by [Paczynski (1983)](https://ui.adsabs.harvard.edu/abs/1983ApJ...267..315P/abstract) that we will use later.
+and $P=(2/3)U$. [Antia (1993)](https://ui.adsabs.harvard.edu/abs/1993ApJS...84..101A/abstract) provides some useful fitting formulae for the Fermi integrals in case you ever find yourself in the partially-degenerate limit. There is also a useful interpolation formula by [Paczynski (1983)](https://ui.adsabs.harvard.edu/abs/1983ApJ...267..315P/abstract) that we will use later.
 
 In the non-degenerate or degenerate limits these reduce to the expressions we found earlier. If we also want to include arbitrary degrees of relativistic motion, the Fermi integrals then depend on an additional parameter $k_BT/mc^2$ (you can find more details in [Chabrier \& Potekhin (1998)](https://ui.adsabs.harvard.edu/abs/1998PhRvE..58.4941C/abstract)).
 
@@ -105,7 +105,7 @@ As an example, consider a fully-ionized solar composition gas with hydrogen mass
 $$P_{\rm ion} = n_H k_BT + n_{He} k_BT = {\rho k_B T\over m_p}\left(X_H+{X_{He}\over 4}\right)={\rho k_B T\over \mu_\mathrm{ion} m_p},$$
 which defines $\mu_{\rm ion} = (X_H + X_{He}/4)^{-1}\approx 1.3$. For a general mixture of ions, $$Y_{\rm ion}={1\over \mu_{\rm ion}} = \sum Y_i = \sum {X_i\over A_i}.$$
 The electrons contribute $P_e=n_ek_BT$ to the pressure if they are non-degenerate. From charge neutrality, $n_e = \sum n_iZ_i$ and so $$P_e = {\rho k_B T\over m_p}\sum Y_i Z_i = {\rho k_B T\over m_p}\sum {X_iZ_i\over A_i} = {\rho k_B T\over \mu_e m_p}.$$ For the H/He mixture, we infer $\mu_e=(X_H+X_{He}/2)^{-1}\approx 1.2$. The total pressure is $$P = (n_e+n_H+n_{He})k_BT = {\rho k_B T\over m_p}\left({1\over \mu_{\rm ion}}+{1\over \mu_e}\right)={\rho k_B T\over \mu m_p}.$$
-This defines the mean molecular weight $\mu^{-1}=\mu_e^{-1}+\mu_{\rm ion}^{-1}$. For the solar mixture, $\mu^{-1}=2X_H+3X_{He}/4$ giving $\mu\approx 0.6$. 
+This defines the mean molecular weight $\mu^{-1}=\mu_e^{-1}+\mu_{\rm ion}^{-1}$. For the solar mixture, $\mu^{-1}=2X_H+3X_{He}/4$ giving $\mu\approx 0.62$. 
 
 Pure H has $\mu_e=\mu_i=1$ and $\mu=1/2$. Pure He has $\mu_e=2$, $\mu_i=4$, and $\mu=4/3$. Heavier elements than helium also have $\mu_e\approx 2$ since $A\approx 2Z$ for all nuclei except hydrogen.
 
@@ -136,14 +136,13 @@ White dwarfs are stars held up by degenerate electron pressure [^ionpressure]. F
 
 [^ionpressure]: The ions also have a pressure, but it is much smaller than the electron pressure. That is because the ions are non-degenerate, so their pressure is a factor $\sim k_BT/E_F$ times smaller.
 
-As we mentioned earlier, the solutions of the stellar structure equations {eq}`eq:cold1` and {eq}`eq:cold2` for $P\propto\rho^\gamma\propto \rho^{1 + 1/n}$ are known as polytropes. You can look up the properties of polytropes for different values of polytropic index $n$, in particular the numerical solutions give the values of $$\alpha_n = {P_c\over GM^2/R^4}\hspace{1cm}\beta_n = {\rho_c\over \langle \rho\rangle},$$ where $\langle\rho\rangle = 3M/4\pi R^3$ is the mean density. For $\gamma=5/3$, $n=3/2$, $\alpha=0.77$ and $\beta=5.99$. For $\gamma=4/3$, $n=3$, $\alpha = 11.1$ and $\beta = 54.2$.
+As we mentioned earlier, the solutions of the stellar structure equations {eq}`eq:cold1` and {eq}`eq:cold2` for $P\propto\rho^\gamma\propto \rho^{1 + 1/n}$ are known as polytropes. You can look up the properties of polytropes for different values of polytropic index $n$, in particular the numerical solutions give the values of $$\alpha_n = {P_c\over GM^2/R^4}\hspace{1cm}\beta_n = {\rho_c\over \langle \rho\rangle},\label{eq:alphabeta}$$ where $\langle\rho\rangle = 3M/4\pi R^3$ is the mean density. For $\gamma=5/3$, $n=3/2$, $\alpha=0.77$ and $\beta=5.99$. For $\gamma=4/3$, $n=3$, $\alpha = 11.1$ and $\beta = 54.2$.
 
-To get the white dwarf mass--radius relation, we write  the equation of state at the center as $P_c=K_{nr}\rho_c^{5/3}$,
-where
+To get the white dwarf mass-radius relation, we write the equation of state at the center as $P_c=K_{nr}\rho_c^{5/3}$, where
 \begin{eqnarray}
 K_{nr}&=&{P\over \rho^{5/3}} = {2\over 5}{n E_F\over \rho^{5/3}} = {2\over 5}{n\over \rho^{5/3}}{p_F^2\over 2m}={2\over 5}{\hbar^2(3\pi^2)^{2/3}\over 2m}\left({n\over \rho}\right)^{5/3}\nonumber\\ &=& 9.9\times 10^{12}\ {\rm cgs}\ Y_e^{5/3}.
 \end{eqnarray}
-Then using the $n=3/2$ polytrope results for $\alpha$ and $\beta$ gives the white dwarf mass-radius relation at low masses
+Then using the $n=3/2$ polytrope results for $\alpha$ and $\beta$ as given in equations {eq}`eq:alphabeta`, we can rewrite $P_c=K_{nr}\rho_c^{5/3}$ in terms of $M$ and $R$ to obtain the white dwarf mass-radius relation at low masses
 \begin{eqnarray}
 R_{5/3} &=& M^{-1/3} \left({K_{nr}\over \alpha_{3/2} G}\right)\left({3\beta_{3/2}\over 4\pi}\right)^{5/3}\nonumber\\
 &\approx 9\times 10^8\ {\rm cm}\ \left({M\over M_\odot}\right)^{-1/3}\left({Y_e\over 0.5}\right)^{5/3}.
@@ -200,6 +199,16 @@ $$R = {K_e\over GM^{1/3}+K_CM^{-1/3}}.$$
 The two limits are $R=(K_e/G) M^{-1/3}$ "white dwarf" and $R=(K_e/K_C)M^{1/3}$ "rock". The maximum radius is where $M=(K_C/G)^{3/2}\approx 0.4\ M_J$. 
 
 The interplay between degeneracy pressure and Coulomb pressure, leading to the turnover of the $R(M)$ relation, is the reason why the radii of brown dwarfs are about the same as Jupiter, despite being $30$-$100$ times more massive!
+
+## Reading questions
+
+1. What is a polytrope? What polytropic index would you use to model (i) a low mass white dwarf or (ii) a neutron star?
+2. Use the *back-of-the-envelope* approach to derive an approximate expression for the Fermi energy at the centre of a white dwarf.
+3. We found that $\mu\approx 0.62$ for solar material with $X=0.7$ and $Y=0.3$. In reality, the solar composition has a small amount of heavy elements of about 2% by mass. Would including these significantly change the value of $\mu$?
+4. Two white dwarfs have the same mass but one is carbon-oxygen (ie. composed of a mixture of $^{12}$C and $^{16}O$), the other is oxygen-neon ($^{16}$O and $^{20}$Ne). Explain whether you would expect them to have different radii or not.
+5. Draw a sketch of the mass radius relation for degenerate objects that goes from Earth masses up to the Chandrasekhar mass. Use logarithmic axes and roughly label them with corresponding values of M and R.
+
+
 
 
 
