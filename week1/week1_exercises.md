@@ -22,11 +22,9 @@ Compare with the induction equation for MHD. What conclusion do you come to abou
 
 ### 3. Magnetic field winding
 
-Consider a spherical star which is differentially rotating such that the fluid velocity is $\vec{u}=\hat{\phi}\  R \Omega(R)$, where we use cylindrical coordinates $(R,\phi,z)$ with $z$ along the rotation axis. A poloidal magnetic field $(B_R(R,z), 0, B_z(R,z))$ threads the star initially. For this question, neglect the ohmic diffusion term in the induction equation.
+Consider a spherical star which is differentially rotating such that the fluid velocity is $\vec{u}=\hat{\phi}\  R \Omega(R)$, where we use cylindrical coordinates $(R,\phi,z)$ with $z$ along the rotation axis. A poloidal magnetic field $(B_R(R,z), 0, B_z(R,z))$ threads the star initially. For this question, neglect the ohmic diffusion term in the induction equation. Assume that the velocity does not change over time. What does the induction equation imply for the subsequent evolution of the field? Explain your result physically.
 
-(a) First assume that the velocity does not change over time. What does the induction equation imply for the subsequent evolution of the field? Explain your result physically.
-
-(b) Now write down the momentum equation for the fluid and include the back reaction of the field on the fluid. What is the evolution in time?
+Without calculating anything, think about what the back-reaction on the fluid will look like. How will the system evolve in time?
 
 ### 4. Electric field in an atmosphere
 
