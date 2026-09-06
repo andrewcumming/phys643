@@ -203,8 +203,8 @@ The interplay between degeneracy pressure and Coulomb pressure, leading to the t
 ## Reading questions
 
 1. What is a polytrope? What polytropic index would you use to model (i) a low mass white dwarf or (ii) a neutron star?
-2. Use the *back-of-the-envelope* approach to derive an approximate expression for the Fermi energy at the centre of a white dwarf.
-3. We found that $\mu\approx 0.62$ for solar material with $X=0.7$ and $Y=0.3$. In reality, the solar composition has a small amount of heavy elements of about 2% by mass. Would including these significantly change the value of $\mu$?
+2. Use the *back-of-the-envelope* approach to derive an approximate expression for the Fermi energy at the centre of a white dwarf in terms of its mass and radius.
+3. We found that $\mu\approx 0.62$ for solar material with $X=0.7$ and $Y=0.3$. In reality, the solar composition has a small amount of heavy elements of about 2% by mass. Would including these significantly change the value of $\mu$? Explain your answer.
 4. Two white dwarfs have the same mass but one is carbon-oxygen (ie. composed of a mixture of $^{12}$C and $^{16}O$), the other is oxygen-neon ($^{16}$O and $^{20}$Ne). Explain whether you would expect them to have different radii or not.
 5. Draw a sketch of the mass radius relation for degenerate objects that goes from Earth masses up to the Chandrasekhar mass. Use logarithmic axes and roughly label them with corresponding values of M and R.
 
