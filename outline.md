@@ -52,7 +52,7 @@ Each week's reading will have a set of questions that will help you think about 
 One paper presentation (15 min) per student during the term. The presentation can use slides or blackboard as appropriate, and should summarize the main points of the paper(s) and explain how they are connected to the class notes.
 
 **Computational exercises**:
-Computational exercises will be done individually as homework (there will be 3 of these).
+Computational exercises will be done individually as homework (there will be 3 of these). You should submit your solution to myCourses as a Jupyter notebook.
 
 **Project**:
 The projects will be done in groups of three. The goal is to run a simulation of an astrophysical system and analyze the results. **All groups will present their plan for the project on October 8 in class**. Final presentations will be split over two classes on Nov 26 and Dec 1.
