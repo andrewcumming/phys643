@@ -4,6 +4,7 @@
 
 - To develop physical intuition about astrophysical gas and plasma and use it to understand the behaviour of astrophysical systems
 - To gain experience in numerical techniques for simulating astrophysical fluids.
+- To be exposed to classic and modern research papers in astrophysical fluids, including practise critically reading papers and presenting the main ideas to others.
 
 A background of undergraduate physics is assumed, but no prior knowledge of fluid dynamics is required. This course is a part of the PHYS 641 to 645 series at McGill that gives a comprehensive exposure to graduate level astrophysics. In particular, it is complementary to PHYS 642 Radiative Processes in Astrophysics. While PHYS 642 is about why astronomical objects *look* the way they do, PHYS 643 considers why they *behave* the way they do.
 
