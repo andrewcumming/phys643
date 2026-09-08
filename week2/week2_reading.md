@@ -117,7 +117,7 @@ $${1\over \mu_e} = \sum_i {Z_i X_i\over A_i}.$$
 
 To give you a feeling for some numbers, the following figure maps out where in the $\rho$--$T$ plane matter is non-degenerate, degenerate, non-relativistic or relativistic, or (at high temperatures) where radiation pressure dominates:
 
-:::{figure} https://github.com/andrewcumming/phys643/blob/main/week2/rhoT.pdf
+:::{figure} rhoT.png
 :::
 
 (the composition here is assumed to be pure helium).
@@ -159,7 +159,7 @@ which interpolates between non-relativistic and relativistic electrons (and Pacy
 $$R\approx R_{5/3}\left[1-\left({M\over M_\mathrm{Ch}}\right)^{4/3}\right]^{1/2}.$$
 Here is a plot of this $M(R)$ relation:
 
-:::{figure} https://github.com/andrewcumming/phys643/blob/main/week2/wd.pdf
+:::{figure} wd.png
 :::
 
 As the mass approaches the Chandrasekhar mass, the central density increases dramatically (because of decreasing radius but also the increasing value of $\beta_n$ as $\gamma\rightarrow 4/3$, see above). Once it gets to $\rho_c\sim 10^9\ {\rm g\ cm^{-3}}$, interesting things can happen. One possibility is carbon fusion leading to a Type Ia supernova. The other is that electrons can capture into the nuclei, removing pressure support and leading to collapse to a neutron star. White dwarfs can reach these large masses either through merging or accretion, or through stellar evolution, e.g. the iron core of a massive star.
