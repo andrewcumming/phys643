@@ -15,7 +15,7 @@ $${\partial \vec{u}\over\partial t} + \vec{u}\cdot\vec{\nabla}\vec{u} = -{\vec{\
 Using the vector identity given in the question, setting $\partial/\partial t=0$ for a steady flow, and writing $\vec{g} = -\vec{\nabla}\Phi$ gives
 $$\vec{\nabla}\left({1\over 2}u^2\right) - \vec{u}\times (\vec{\nabla}\times \vec{u}) = -{\vec{\nabla} P\over \rho} -\vec{\nabla}\Phi.$$
 Given the definition of enthalpy per unit mass in the question, we can also rewrite $${\vec{\nabla} P\over \rho} = \vec{\nabla} h.$$ Then doing $\vec{u}\cdot$ the momentum equation gives
-$$\vec{u}\cdot\left({1\over 2} u^2 + h + \Phi\right) =0$$ which is the result we are looking for.
+$$\vec{u}\cdot\vec{\nabla}\left({1\over 2} u^2 + h + \Phi\right) =0$$ which is the result we are looking for.
 
 Note that a key part of the derivation is being able to write the term $(\vec{\nabla} P)/\rho$ as the gradient $\vec{\nabla} h$. This cannot be done in general, but here we assumed a barotropic fluid for which $$h = e + {P\over\rho} = {P\over (\gamma-1)\rho} + {P\over \rho} = {\gamma\over \gamma-1}{P\over \rho}$$ satisfies $dP/\rho = dh$. An easier example that satisfies Bernoulli's principle is an incompressible fluid such as water where we can easily write $(\vec{\nabla} P)/\rho = \vec{\nabla}(P/\rho)$.
 :::
