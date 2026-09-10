@@ -28,6 +28,9 @@ project:
         - title: 'Reading'
           file: week3/week3_reading.md
         - file: week3/week3_papers.md
+    - title: 'Computational Exercises'
+      children:
+        - file: comp1.md
 site:
   template: book-theme
   # title:

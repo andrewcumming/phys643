@@ -6,12 +6,13 @@
 | Th Sep 3 | Introduction to the fluid equations | [Reading](/week1-reading) |
 | T Sep 8 | | [Exercises](/week1-exercises)|
 | Th Sep 10 | Cold stars | [Reading](/week2-reading), [Exercises](/week2-exercises) |
+| | | [Computational Exercise 1](comp1) |
 | T Sep 15 | *Presentations 1* | [Papers](/week2-papers) |
-| Th Sep 17 | Hot stars | |
-| T Sep 22 | *Presentations 2* | |
+| Th Sep 17 | Hot stars | [Reading](/week3-reading) |
+| T Sep 22 | *Presentations 2* | [Papers](/week3-papers) |
 | Th Sep 24 | Compressible fluids | |
 | T Sep 29 | *Presentations 3* | |
-| Th Oct 1 | Numerical methods | |
+| Th Oct 1 | Numerical methods | **Computational exercise 1 due** |
 | T Oct 6 | *Presentations 4* | |
 | Th Oct 8 | Project topic presentations | |
 | T Oct 13 | *Reading week- no class* | |
