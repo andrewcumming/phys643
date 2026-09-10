@@ -5,7 +5,7 @@
 | T Sep 1 | First meeting and overview of the course | |
 | Th Sep 3 | Introduction to the fluid equations | [Reading](/week1-reading) |
 | T Sep 8 | | [Exercises](/week1-exercises)|
-| Th Sep 10 | Cold stars | [Reading](/week2-reading) |
+| Th Sep 10 | Cold stars | [Reading](/week2-reading), [Exercises](/week2-exercises) |
 | T Sep 15 | *Presentations 1* | [Papers](/week2-papers) |
 | Th Sep 17 | Hot stars | |
 | T Sep 22 | *Presentations 2* | |
