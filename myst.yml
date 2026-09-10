@@ -21,6 +21,7 @@ project:
       children:
         - title: 'Reading'
           file: week2/week2_reading.md
+        - file: week2/week2_exercises.md
         - file: week2/week2_papers.md
 site:
   template: book-theme
