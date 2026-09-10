@@ -23,6 +23,11 @@ project:
           file: week2/week2_reading.md
         - file: week2/week2_exercises.md
         - file: week2/week2_papers.md
+    - title: 'Week 3: Hot Stars'
+      children:
+        - title: 'Reading'
+          file: week3/week3_reading.md
+        - file: week3/week3_papers.md
 site:
   template: book-theme
   # title:
