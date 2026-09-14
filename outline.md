@@ -50,7 +50,7 @@ The final grade will be based on:
 Each week's reading will have a set of questions that will help you think about the material and highlight the most important points. Answers to these questions must be submitted as a PDF on myCourses **before the start of each Thursday's class**. Notes will be provided one week in advance, so you will have one week to prepare answers to the questions. We will discuss the answers in the Thursday class.
 
 **Presentation**:
-One paper presentation (15 min) per student during the term. An opportunity to sign up for a specific presentation date will be provided at the beginning of term. There will be 4 students presenting each week. I will provide a list of 4 sets of papers (sometimes single papers, sometimes a group of 2 or 3 papers depending on the topic) that are related to something we have been discussing in class. The list will be provided together with the reading notes, so you will have approximately 10 days to read the paper(s) and prepare the presentation.
+One paper presentation (12+3 min) per student during the term. An opportunity to sign up for a specific presentation date will be provided at the beginning of term. There will be 4 students presenting each week. I will provide a list of 4 sets of papers (sometimes single papers, sometimes a group of 2 or 3 papers depending on the topic) that are related to something we have been discussing in class. The list will be provided together with the reading notes, so you will have approximately 10 days to read the paper(s) and prepare the presentation.
 
 The presentation can use slides or blackboard as appropriate. The presentation should summarize the main points of the paper(s) and highlight connections to the class notes. The goal of this exercise is to practise being able to read a paper, figure out what is important in it, understand it well enough to explain it to someone else in the class in a limited time, and think critically about what you read.
 
@@ -77,6 +77,10 @@ Here are some examples of past projects to give you some ideas:
 - Writing a convection code from scratch
 - Modelling a supersonic wind impacting a dense cloud
 - Ram-pressure-stripping of galaxies with ENZO
+
+Other project suggestions:
+- Simulate the flow in a lava planet
+- Make models of possible interior structures for your favourite exoplanet based on realistic equations-of-state
 
 ## Useful books and other resources
 
