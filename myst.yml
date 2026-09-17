@@ -29,6 +29,11 @@ project:
           file: week3/week3_reading.md
         - file: week3/week3_exercises.md
         - file: week3/week3_papers.md
+    - title: 'Week 4: Compressible fluids'
+      children:
+        - title: 'Reading'
+          file: week4/week4_reading.md
+        - file: week4/week4_papers.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
