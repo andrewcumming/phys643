@@ -27,6 +27,7 @@ project:
       children:
         - title: 'Reading'
           file: week3/week3_reading.md
+        - file: week3/week3_exercises.md
         - file: week3/week3_papers.md
     - title: 'Computational Exercises'
       children:
