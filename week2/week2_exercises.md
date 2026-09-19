@@ -132,6 +132,9 @@ Therefore we have
 $$-{\Omega\over 3} = -\left({\gamma-1\over\gamma}\right)\left[{GM^2\over R} + 2\Omega\right].$$
 
 Simplifying terms gives the answer in the question.
+
+For an incompressible EOS, we have $\gamma\rightarrow \infty$ or $n\rightarrow 0$, which gives a prefactor of $3/5$. You might recognize this as the formula for the gravitational energy of a constant density sphere.
+
 :::
 
 
