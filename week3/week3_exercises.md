@@ -79,9 +79,11 @@ The gravity at the base of the envelope is dominated by the gravity there $GM_c/
 $$P\approx {\rho k_B T\over m_p}\approx {M_\mathrm{env}\over 4\pi r^2} {GM_c\over R_c^2}$$
 (the pressure is given by the mass per unit area times the gravity, ie. the pressure force per unit area supports the weight of the column of mass per unit area).
 
-The density in the envelope should be $\rho\sim M_\mathrm{env}/r^3$ so for $r\approx R_c$, we get the scaling
+The density in the envelope should be roughly $\rho\sim M_\mathrm{env}/r^3$ so for $r\approx R_c$, we get 
 
 $$k_BT\approx {GM_cm_p\over R_c}.$$
+
+We've dropped prefactors here for a rough estimate, but this should capture the correct scaling. The point is that the core properties determine the temperature at the base of the envelope, because the core dominates the gravity there.
 
 Putting in $M_c \approx 0.5 M_\odot$ and $R_c\approx 10^9\ \mathrm{cm}$ (typical white dwarf radius) gives
 
