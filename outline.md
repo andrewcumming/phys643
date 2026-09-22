@@ -46,10 +46,12 @@ The final grade will be based on:
 - Computational exercises (30%)
 - Group project (40%)
 
-**Reading questions**:
+### Reading questions
+
 Each week's reading will have a set of questions that will help you think about the material and highlight the most important points. Answers to these questions must be submitted as a PDF on myCourses **before the start of each Thursday's class**. Notes will be provided one week in advance, so you will have one week to prepare answers to the questions. We will discuss the answers in the Thursday class.
 
-**Presentation**:
+### Presentation
+
 One paper presentation (12+3 min) per student during the term. An opportunity to sign up for a specific presentation date will be provided at the beginning of term. There will be 4 students presenting each week. I will provide a list of 4 sets of papers (sometimes single papers, sometimes a group of 2 or 3 papers depending on the topic) that are related to something we have been discussing in class. The list will be provided together with the reading notes, so you will have approximately 10 days to read the paper(s) and prepare the presentation.
 
 The presentation can use slides or blackboard as appropriate. The presentation should summarize the main points of the paper(s) and highlight connections to the class notes. The goal of this exercise is to practise being able to read a paper, figure out what is important in it, understand it well enough to explain it to someone else in the class in a limited time, and think critically about what you read.
@@ -59,11 +61,25 @@ The presentations will be graded equally in the following three areas:
 - **Understanding and summary of the paper(s)**. How well are the main points of the paper(s) and links to the class notes identified and summarized? Does the presentation give an accurate summary of what was done and the goals of the paper? How well are the important ideas distinguished from less important aspects (e.g. technical details) that can be omitted?
 - **Critical thinking while reading the paper(s)**. The presentation should demonstrate that you have thought about the content of the paper(s) beyond simply summarizing the contents. Examples would be: highlighting parts that are unclear or that you find difficult to understand, identifying limitations or assumptions, discussing whether the technical approach is reasonable, discussing the links between the different papers if more than one, or discussing the links to the class notes (e.g. checking that some of the results in the paper agree with the results in the class notes once notations are made consistent).
 
-**Computational exercises**:
+### Computational exercises
+
 Computational exercises will be done individually as homework (there will be 3 of these). You should submit your solution to myCourses as a Jupyter notebook.
 
-**Project**:
+### Project
+
 The projects will be done in groups of three. The goal is to run a simulation of an astrophysical system and analyze the results. **All groups will present their plan for the project on October 8 in class**. Final presentations will be split over two classes on Nov 26 and Dec 1.
+
+**October 8 project-plan presentation**. In your presentation on October 8, you should:
+- present the scientific question you will be investigating and motivate why it is interesting
+- describe what your numerical approach to solving the problem is going to be. What are the first steps in getting started?
+- what are some of the potential difficulties that might come up?
+- what results are you hoping to get and what analysis will you be doing to answer the science question?
+
+**Final presentation**. You will present your results to the class in a 15+5 minute presentation either on Nov 26 or Dec 1. In your presentation you should:
+- motivate the problem you are working on: why is it interesting? what question were you trying to answer?
+- describe the physical picture and justify your numerical approach, including approximations you are making, your choice of code if you used an existing code, choice of boundary conditions etc.
+- show your results and analysis, comparing with analytic results or previous work as appropriate, relating to the class materials where appropriate. Discuss particular difficulties you had during the project and how you tried to overcome them, or unexpected results and how you tried to understand them. 
+- clearly organize your presentation and present the material at an appropriate level for other members of the class.
 
 Here are some examples of past projects to give you some ideas:
 - Colliding stellar winds with the PLUTO code

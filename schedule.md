@@ -31,4 +31,5 @@
 | Th Nov 26 | Project presentations | |
 | T Dec 1 | Project presentations | |
 
-[Sign-up sheet](https://docs.google.com/spreadsheets/d/1Cabvm5ToNIxq84iTYfPZQGtCRScSsgpkmUrZN3meUQY/edit?usp=sharing) for presentations
+[Sign-up sheet](https://docs.google.com/spreadsheets/d/1Cabvm5ToNIxq84iTYfPZQGtCRScSsgpkmUrZN3meUQY/edit?usp=sharing) for presentations and projects
+
