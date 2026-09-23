@@ -10,7 +10,7 @@
 | T Sep 15 | *Presentations 1* | [Papers](/week2-papers) |
 | Th Sep 17 | Hot stars | [Reading](/week3-reading), [Exercises](/week3-exercises) |
 | T Sep 22 | *Presentations 2* | [Papers](/week3-papers) |
-| Th Sep 24 | Compressible fluids | [Reading](/week4-reading) |
+| Th Sep 24 | Compressible fluids | [Reading](/week4-reading), [Exercises](/week4-exercises) |
 | T Sep 29 | *Presentations 3* |  [Papers](/week4-papers) |
 | Th Oct 1 | Numerical methods | **Computational exercise 1 due** |
 | T Oct 6 | *Presentations 4* | |
