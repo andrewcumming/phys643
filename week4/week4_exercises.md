@@ -2,7 +2,7 @@
 
 ## 1. Sound speed
 
-Derive a formula giving the sound speed in cm/s as a function of temperature in K. Make a table of the sound speed in different astrophysical environments. 
+Derive a formula giving the sound speed in km/s as a function of temperature in K. You can use the adiabatic sound speed with $\gamma=5/3$ and assume pure atomic hydrogen. Make a table of the sound speed in different astrophysical environments. 
 
 Considering the typical flow speeds you might expect in each environment, comment on the likelihood of achieving supersonic flows.
 
