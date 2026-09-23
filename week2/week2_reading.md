@@ -145,7 +145,7 @@ K_{nr}&=&{P\over \rho^{5/3}} = {2\over 5}{n E_F\over \rho^{5/3}} = {2\over 5}{n\
 Then using the $n=3/2$ polytrope results for $\alpha$ and $\beta$ as given in equations {eq}`eq:alphabeta`, we can rewrite $P_c=K_{nr}\rho_c^{5/3}$ in terms of $M$ and $R$ to obtain the white dwarf mass-radius relation at low masses
 \begin{eqnarray}
 R_{5/3} &=& M^{-1/3} \left({K_{nr}\over \alpha_{3/2} G}\right)\left({3\beta_{3/2}\over 4\pi}\right)^{5/3}\nonumber\\
-&\approx 9\times 10^8\ {\rm cm}\ \left({M\over M_\odot}\right)^{-1/3}\left({Y_e\over 0.5}\right)^{5/3}.
+&\approx 8.8\times 10^8\ {\rm cm}\ \left({M\over M_\odot}\right)^{-1/3}\left({Y_e\over 0.5}\right)^{5/3}.\label{eq:WD53MR}
 \end{eqnarray}
 (We write $R_{5/3}$ to indicate that this is the white dwarf radius assuming $\gamma=5/3$). As the star gets more massive, the radius shrinks. The central density increases rapidly with mass, $\rho_c\propto M/R^3\propto M^2$.
 
