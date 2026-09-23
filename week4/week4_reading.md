@@ -38,7 +38,7 @@ We also need the induction equation
 $$i\omega \delta\vec{B} = \vec{\nabla}\times (\delta\vec{v}\times\vec{B}).$$
 With these two extra ingredients, you can show that (try it!)
 \begin{eqnarray}\delta\vec{v}(\omega^2 - (\vec{k}\cdot\vec{v}_A)^2) - (\vec{k}\cdot\delta \vec{v})\left[\vec{k}(c_s^2+v_A^2)-\vec{v}_A(\vec{k}\cdot\vec{v}_A)\right]\nonumber\\ + \vec{k}(\vec{k}\cdot\vec{v}_A)(\delta \vec{v}\cdot\vec{v}_A)
-=0.
+=0.\label{eq:magneticwavesdispersion}
 \end{eqnarray}
 This is a complicated dispersion relation, so it helps to think about particular limits. Setting $\vec{k}\cdot\vec{v}_A=0$ (so $\vec{k}$ perpendicular to $\vec{B}$) makes several terms vanish, and you can straightforwardly show that $\omega^2 = k^2(c_s^2 + v_A^2)$, the fast magnetosonic mode mentioned above. If instead we assume $\vec{k}\parallel \vec{v}_A$, then things simplify to
 \begin{equation}\label{eq:alfven_disp}\delta\vec{v}(\omega^2-k^2v_A^2) = (\vec{k}\cdot\delta\vec{v})\vec{k}(c_s^2-v_A^2).	
