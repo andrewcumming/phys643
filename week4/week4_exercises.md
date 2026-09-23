@@ -21,7 +21,7 @@ Consider a shock in an ideal gas with $\gamma=5/3$. If the shock compresses the 
 
 ## 4. Accretion shock
 
-A white dwarf is accreting matter from a companion. If the matter free-falls onto the surface of the star and is stopped by a shock, estimate the temperature of the post-shock gas.
+A white dwarf is accreting matter from a companion. If the matter free-falls onto the surface of the star and is stopped by a strong shock, estimate the temperature of the post-shock gas.
 
 If the shock is optically-thin, where in the electromagnetic spectrum would you look to find this kind of system?
 
@@ -36,4 +36,4 @@ Consider a radiative shock where the cooling is efficient so that the temperatur
 
 Investigate the change in entropy ($S\propto \ln (P/\rho^\gamma)$) across a shock. You can assume $\gamma=5/3$.
 
-In particular, what does this look like for a weak shock $\mathcal{M}_1 = 1+\epsilon$ and a strong shock $\mathcal{M}_1\gg 1$?
+In particular, what does this look like for a weak shock $\mathcal{M}^2_1 = 1+\epsilon$ and a strong shock $\mathcal{M}_1\gg 1$?
