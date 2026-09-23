@@ -33,6 +33,7 @@ project:
       children:
         - title: 'Reading'
           file: week4/week4_reading.md
+        - file: week4/week4_exercises.md
         - file: week4/week4_papers.md
     - title: 'Computational Exercises'
       children:
