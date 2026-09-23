@@ -34,6 +34,6 @@ Consider a radiative shock where the cooling is efficient so that the temperatur
 
 ## 6. Entropy generation
 
-Investigate the change in entropy ($S\propto \ln (P/\rho^\gamma)$) across a shock.
+Investigate the change in entropy ($S\propto \ln (P/\rho^\gamma)$) across a shock. You can assume $\gamma=5/3$.
 
 In particular, what does this look like for a weak shock $\mathcal{M}_1 = 1+\epsilon$ and a strong shock $\mathcal{M}_1\gg 1$?
