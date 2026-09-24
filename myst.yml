@@ -35,6 +35,11 @@ project:
           file: week4/week4_reading.md
         - file: week4/week4_exercises.md
         - file: week4/week4_papers.md
+    - title: 'Week 5: Numerical techniques'
+      children:
+        - title: 'Reading'
+          file: week5/week5_reading.md
+        - file: week5/week5_papers.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
