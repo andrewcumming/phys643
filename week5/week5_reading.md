@@ -128,6 +128,7 @@ In a numerical spectral method, these transforms would become sums over a discre
 - What is the difference between explicit and implicit methods? What are some advantages and disadvantages of each?
 - Explain what is meant by (i) numerical diffusion, (ii) upwind differencing.
 - What is the difference between amplitude and phase errors? How might each of them manifest themselves in a numerical solution?
+- What is the CFL condition?
 - Explain how finite volume methods are able to guarantee that quantities like mass, momentum, and energy are exactly conserved by the numerical method.
 
 
