@@ -20,7 +20,7 @@ $${\partial^2\delta\vec{v}\over \partial t^2} = {\gamma P\over \rho} \nabla^2\de
 where the *adiabatic sound speed*[^adiabcs] $c_s$ is given by $c_s^2 = \gamma P/\rho$. This is the sound speed that we usually think of — for example looking up values for atmospheric pressure $\approx 10^5\ {\rm Pa}$, density of air at STP $\approx 1.2\ {\rm kg\ m^{-3}}$, and $\gamma=7/5$ for a diatomic gas, I get $340\ {\rm m/s}$.
 
 [^adiabcs]: Note that in general, the sound speed is  
-$$c_s^2 = {\partial P\over \partial \rho}$$ with the partial derivative taken under whatever conditions are appropriate for the perturbations.  We considered adiabatic perturbations so the derivative is taken at constant entropy. When heat transfer is very rapid for example, we would keep temperature constant when taking the derivative, giving the isothermal sound speed $c_T^2 = P/\rho$.
+$$c_s^2 = {\partial P\over \partial \rho}$$ with the partial derivative taken under whatever conditions are appropriate for the perturbations.  We considered adiabatic perturbations so the derivative is taken at constant entropy. When heat transfer is rapid compared to the wave period for example, we would keep temperature constant when taking the derivative, giving the isothermal sound speed $c_T^2 = P/\rho$.
 
 Looking for plane wave solutions, ie. perturbations $\propto e^{-i\omega t+\vec{k}\cdot\vec{r}}$, we find a *dispersion relation*
 $$\omega^2 = c_s^2 k^2.$$
