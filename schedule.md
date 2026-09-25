@@ -12,8 +12,8 @@
 | T Sep 22 | *Presentations 2* | [Papers](/week3-papers) |
 | Th Sep 24 | Compressible fluids | [Reading](/week4-reading), [Exercises](/week4-exercises) |
 | T Sep 29 | *Presentations 3* |  [Papers](/week4-papers) |
-| Th Oct 1 | Numerical methods |  |
-| T Oct 6 | *Presentations 4* | **Computational exercise 1 due** |
+| Th Oct 1 | Numerical methods | [Reading](/week5-reading) |
+| T Oct 6 | *Presentations 4* |  [Papers](/week5-papers), **Computational exercise 1 due** |
 | Th Oct 8 | Project topic presentations | |
 | T Oct 13 | *Reading week- no class* | |
 | Th Oct 15 | Inflows and Outflows | |
