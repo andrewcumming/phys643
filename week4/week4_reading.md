@@ -20,7 +20,7 @@ $${\partial^2\delta\vec{v}\over \partial t^2} = {\gamma P\over \rho} \nabla^2\de
 where the *adiabatic sound speed*[^adiabcs] $c_s$ is given by $c_s^2 = \gamma P/\rho$. This is the sound speed that we usually think of — for example looking up values for atmospheric pressure $\approx 10^5\ {\rm Pa}$, density of air at STP $\approx 1.2\ {\rm kg\ m^{-3}}$, and $\gamma=7/5$ for a diatomic gas, I get $340\ {\rm m/s}$.
 
 [^adiabcs]: Note that in general, the sound speed is  
-$$c_s^2 = {\partial P\over \partial \rho}$$ with the partial derivative taken under whatever conditions are appropriate for the perturbations.  We considered adiabatic perturbations so the derivative is taken at constant entropy. When heat transfer is rapid compared to the wave period for example, we would keep temperature constant when taking the derivative, giving the isothermal sound speed $c_T^2 = P/\rho$.
+$$c_s^2 = {\partial P\over \partial \rho}$$ with the partial derivative taken under whatever conditions are appropriate for the perturbations.  We considered adiabatic perturbations so the derivative is taken at constant entropy. When heat transfer is very rapid for example, we would keep temperature constant when taking the derivative, giving the isothermal sound speed $c_T^2 = P/\rho$.
 
 Looking for plane wave solutions, ie. perturbations $\propto e^{-i\omega t+\vec{k}\cdot\vec{r}}$, we find a *dispersion relation*
 $$\omega^2 = c_s^2 k^2.$$
@@ -89,7 +89,9 @@ The profile *steepens* as illustrated in the sketch below.
 ```{figure} steepening.png
 ```
 
-A *shock* forms in which the velocity $v$ changes its value on a very short lengthscale. The thickness of the shock is set by the viscous term in the momentum equation which becomes important as $dv/dx$ becomes large. Viscous stresses act to smooth out the velocity gradient and eventually will balance the steepening from the non-linear term. The lengthscale on which this happens is very short, of order the microscopic mean free path. 
+A *shock* forms in which the velocity $v$ changes its value on a very short lengthscale. The simplest case is when viscosity sets the thickness of the shock. As the velocity gradient $dv/dx$ steepens, the viscous term in the momentum equation becomes more and more important. Viscous stresses act to smooth out the velocity gradient and eventually will balance the steepening from the non-linear term. The lengthscale on which this happens is very short. A simple estimate for the shock thickness $\delta$ is to balance the advection and viscous terms, $v^2/\delta\sim \nu v/\delta^2 \Rightarrow \delta\approx \nu/v$. Since we know that $\nu\sim c_s\ell$ for an ideal gas, we get $\delta \sim \ell (c_s/v)$. The shock thickness is of order the microscopic mean free path.
+
+In many cases, however, the physics of the shock is more complicated. Many shocks occur in environments in which the mean free path is rather large (as we discussed in [week 1](week1-reading#what-is-a-fluid)), e.g. supernova remnant shocks, where observed shock thicknesses are much smaller than the particle mean free path. In such cases, we have a *collisionless shock* in which plasma processes such as plasma instabilities and wave-particle interactions transfer momentum rather than 2-body Coulomb collisions.  
 
 The sketch below shows some different scenarios where shocks can arise:
 
