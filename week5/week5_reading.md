@@ -118,17 +118,13 @@ In a numerical spectral method, these transforms would become sums over a discre
 
 - **Stellar evolution codes**. Stellar evolution codes are designed to solve the equations of stellar structure including detailed input physics such as thermonuclear reaction rates, opacities, and equations of state. These are all very non-linear functions, so the way these codes typically work is that each timestep involves making a guess for what the next solution looks like and then iteratively improving the guess until the solution obeys the stellar structure equations to within some tolerance. If you want to read more about this, a good place to look is [Paxton et al. 2011](https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract) which introduces the open source [MESA](https://mesastar.org/) code.
 
-- **Particle-in-cell** or PIC codes follow charged particles and solve for their associated electromagnetic fields in plasmas. The particles are evolved using their equations of motion in response to the fields, and in turn the electromagnetic fields are solved on a grid using the particle densities as source terms. This kind of calculation is particularly useful for collisionless plasmas, where a fluid description may not be appropriate. Examples of open source PIC codes are [Smilei](https://smileipic.github.io/Smilei/index.html) or [VPIC](https://github.com/lanl/vpic-kokkos/tree/hybridVPIC).
-
-
-
+- **Particle-in-cell** or PIC codes follow charged particles and solve for their associated electromagnetic fields in plasmas. The particles are evolved using their equations of motion in response to the fields, and in turn the electromagnetic fields are solved on a grid using the particle densities as source terms. This kind of calculation is particularly useful for collisionless plasmas, where a fluid description may not be appropriate. Examples of open source PIC codes are [OSIRIS](https://osiris-code.github.io/), [Smilei](https://smileipic.github.io/Smilei/index.html) or [VPIC](https://github.com/lanl/vpic-kokkos/tree/hybridVPIC).
 
 ## Reading questions
 
 - What is the difference between explicit and implicit methods? What are some advantages and disadvantages of each?
 - Explain what is meant by (i) numerical diffusion, (ii) upwind differencing.
 - What is the difference between amplitude and phase errors? How might each of them manifest themselves in a numerical solution?
-- What is the CFL condition?
 - Explain how finite volume methods are able to guarantee that quantities like mass, momentum, and energy are exactly conserved by the numerical method.
 
 
