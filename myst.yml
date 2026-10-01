@@ -1,4 +1,4 @@
-# See docs at: https://mystmd.org/guide/frontmatter
+\1;10;0c# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
   title: PHYS 643 Astrophysical Fluids
@@ -42,6 +42,7 @@ project:
       children:
         - title: 'Reading'
           file: week5/week5_reading.md
+        - file: week5/week5_exercises.md
         - file: week5/week5_papers.md
     - title: 'Computational Exercises'
       children:
