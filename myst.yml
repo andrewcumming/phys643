@@ -46,6 +46,7 @@ project:
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
+        - file: comp2.md
 site:
   template: book-theme
   # title:
