@@ -42,7 +42,7 @@ project:
       children:
         - title: 'Reading'
           file: week5/week5_reading.md
-        - file: week5/week5_exercises.md
+        - file: week5/week5_exercises.ipynb
         - file: week5/week5_papers.md
     - title: 'Computational Exercises'
       children:
