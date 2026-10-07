@@ -14,12 +14,14 @@
 | T Sep 29 | *Presentations 3* |  [Papers](/week4-papers) |
 | Th Oct 1 | Numerical methods | [Reading](/week5-reading) |
 | | | [Computational Exercise 2](comp2) |
-| T Oct 6 | *Presentations 4* |  [Papers](/week5-papers), **Computational exercise 1 due** |
+| T Oct 6 | *Presentations 4* |  [Papers](/week5-papers) |
+| | | **Computational exercise 1 due** |
 | Th Oct 8 | **Project topic presentations** | |
 | T Oct 13 | *Reading week- no class* | |
 | Th Oct 15 | Inflows and Outflows | |
 | T Oct 20 | *Presentations 5* | |
-| Th Oct 22 | Oscillations and instabilities | **Computational exercise 2 due**|
+| Th Oct 22 | Oscillations and instabilities | |
+| | | **Computational exercise 2 due**|
 | T Oct 27 | *Presentations 6* | |
 | Th Oct 29 | Astrophysical turbulence | |
 | T Nov 3 | *Presentations 7* | |
