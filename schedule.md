@@ -18,8 +18,8 @@
 | | | **Computational exercise 1 due** |
 | Th Oct 8 | **Project topic presentations** | |
 | T Oct 13 | *Reading week- no class* | |
-| Th Oct 15 | Inflows and Outflows | |
-| T Oct 20 | *Presentations 5* | |
+| Th Oct 15 | Inflows and Outflows | [Reading](/week6-reading) |
+| T Oct 20 | *Presentations 5* | [Papers](/week6-papers) |
 | Th Oct 22 | Oscillations and instabilities | |
 | | | **Computational exercise 2 due**|
 | T Oct 27 | *Presentations 6* | |
