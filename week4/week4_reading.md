@@ -26,6 +26,8 @@ Looking for plane wave solutions, ie. perturbations $\propto e^{-i\omega t+\vec{
 $$\omega^2 = c_s^2 k^2.$$
 The linear dispersion relation $\omega\propto k$ means that these waves are non-dispersive. They have frequency-independent and equal phase and group velocities: the phase velocity is $\omega/k = c_s$ and group velocity is $d\omega/d k = c_s$. 
 
+## Fast and slow magnetosonic waves
+
 Things get more complicated when the fluid is magnetized. As we discussed in the first week, a magnetized plasma has a magnetic pressure that acts perpendicular to the field lines. Acoustic waves that are travelling across the magnetic field lines experience an extra restoring force and travel more quickly. For the perpendicular case $\vec{k}\perp\vec{B}$, the dispersion relation is
 $$\omega^2 = k^2(c_s^2 + v_A^2)$$
 where
