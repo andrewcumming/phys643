@@ -111,7 +111,7 @@ $$B = {1\over 2}v^2 + {c_s^2\over \gamma-1}\label{eq:Bjet}$$
 is a constant of the flow.
 If there is some pressure and density $P_0$ and $\rho_0$ at which $v=0$ (in the nozzle context, this is the pressure and density in the container; for the jet it's the pressure and density at the base of the flow) then keeping $B$ constant implies 
 $${v^2\over c_{s,0}^2} = {2\over \gamma-1}\left[1-\left({P\over P_0}\right)^{(\gamma-1)/\gamma}\right]$$
-or
+or in terms of the local Mach number 
 $${v^2\over c_s^2} = {2\over \gamma-1}\left[\left({P_0\over P}\right)^{(\gamma-1)/\gamma}-1\right]\label{eq:stagnationjet}$$
 which gives the velocity as a function of pressure. For a large enough pressure drop in the external gas, the flow will make a transition to supersonic flow. Blandford \& Rees made essentially this argument, although they used relativistic equations since the flow speed is a significant fraction of $c$ for the radio jets.
 
