@@ -50,6 +50,11 @@ project:
           file: week6/week6_reading.md
         - file: week6/week6_exercises.md
         - file: week6/week6_papers.md
+    - title: 'Week 7: Oscillations and instabilities'
+      children:
+        - title: 'Reading'
+          file: week7/week7_reading.md
+        - file: week7/week7_papers.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
