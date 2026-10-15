@@ -5,7 +5,10 @@
 Show that the Bondi accretion rate for an adiabatic flow is
 $$\dot M = {\pi (GM)^2\rho_\infty\over c_\infty^3} \left({2\over 5-3\gamma}\right)^{(5-3\gamma)/2(\gamma-1)}.$$
 
+(Hint: first show that $\dot M = \pi (GM)^2 \rho_s/c_s^3$, where $c_s$ and $\rho_s$ are the sound speed and density at the sonic point. Then relate the conditions at the sonic point to those at infinity using the Bernoulli constant.)
+
 Check that in the isothermal limit this reduces to the expression given in the notes.
+
 
 
 ## 2. Thermal equilibria of a thin disk
