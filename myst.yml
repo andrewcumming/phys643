@@ -48,6 +48,7 @@ project:
       children:
         - title: 'Reading'
           file: week6/week6_reading.md
+        - file: week6/week6_exercises.md
         - file: week6/week6_papers.md
     - title: 'Computational Exercises'
       children:
