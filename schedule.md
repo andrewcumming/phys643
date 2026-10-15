@@ -30,8 +30,9 @@
 | Th Nov 12 | Astrophysical plasmas | |
 | T Nov 17 | *Presentations 9* | |
 | Th Nov 19 | Radiation and relativistic flows | |
-| T Nov 24 | | |
+| T Nov 24 | No class | |
 | Th Nov 26 | Project presentations | |
+| M Nov 30 | Project presentations | |
 | T Dec 1 | Project presentations | |
 
 [Sign-up sheet](https://docs.google.com/spreadsheets/d/1Cabvm5ToNIxq84iTYfPZQGtCRScSsgpkmUrZN3meUQY/edit?usp=sharing) for presentations and projects
