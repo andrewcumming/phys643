@@ -49,6 +49,7 @@ project:
         - title: 'Reading'
           file: week6/week6_reading.md
         - file: week6/week6_exercises.md
+        - file: week6/week6_solutions.ipynb
         - file: week6/week6_papers.md
     - title: 'Week 7: Oscillations and instabilities'
       children:
