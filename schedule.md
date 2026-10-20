@@ -29,6 +29,7 @@
 | T Nov 10 | *Presentations 8* | |
 | Th Nov 12 | Astrophysical plasmas | |
 | T Nov 17 | *Presentations 9* | |
+| | | **Computational exercise 3 due**|
 | Th Nov 19 | Radiation and relativistic flows | |
 | T Nov 24 | No class | |
 | Th Nov 26 | Project presentations | |
