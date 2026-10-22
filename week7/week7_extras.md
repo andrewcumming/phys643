@@ -2,7 +2,9 @@
 
 ## Perturbation equations in spherical geometry
 
-For stellar or planetary oscillations, we need the perturbation equations in spherical geometry. We assume the background is spherically-symmetric, so pressure or density depend only on $r$. We take density perturbations of the form 
+In the notes, we looked at gravity waves and acoustic waves in a plane-parallel atmosphere. If we want to study stellar or planetary oscillations, we need to write the perturbation equations in spherical geometry instead.
+
+We assume the background is spherically-symmetric, so pressure or density depend only on $r$. We take density perturbations of the form 
 $$\delta\rho = \delta\rho(r) e^{im\phi} P^m_\ell(\cos\theta)e^{-i\omega t}$$
 and similarly for the pressure perturbation $\delta P$ and radial displacement $\xi_r$. The non-radial displacements have a different angular dependence: 
 $$\xi_\theta = \xi_\theta(r) e^{im\phi} {dP^m_\ell(\cos\theta)\over d\theta} e^{-i\omega t}$$
