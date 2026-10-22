@@ -57,6 +57,7 @@ project:
           file: week7/week7_reading.md
         - file: week7/week7_exercises.md
         - file: week7/week7_papers.md
+        - file: week7/week7_extras.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
