@@ -17,3 +17,6 @@ In your presentation you should answer the following questions:
 - What is the basic physics of the wave or instability?
 - What are important astrophysical applications?
 
+
+[Google doc](https://docs.google.com/document/d/1qV5EE2N20MToWtRPOjIcdZiwMELUoW-_Jpp8D4h7wBs/edit?usp=sharing)
+
