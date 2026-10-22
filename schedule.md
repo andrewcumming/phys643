@@ -21,6 +21,7 @@
 | Th Oct 15 | Inflows and Outflows | [Reading](/week6-reading), [Exercises](/week6-exercises) |
 | T Oct 20 | *Presentations 5* | [Papers](/week6-papers) |
 | Th Oct 22 | Oscillations and instabilities | [Reading](/week7-reading) |
+| | | [Computational Exercise 3](comp3) |
 | T Oct 27 | *Presentations 6* | [Papers](/week7-papers) |
 | | | **Computational exercise 2 due**|
 | Th Oct 29 | Astrophysical turbulence | |

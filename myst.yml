@@ -55,11 +55,13 @@ project:
       children:
         - title: 'Reading'
           file: week7/week7_reading.md
+        - file: week7/week7_exercises.md
         - file: week7/week7_papers.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
         - file: comp2.md
+        - file: comp3.md
 site:
   template: book-theme
   # title:
