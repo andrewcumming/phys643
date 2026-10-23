@@ -58,6 +58,11 @@ project:
         - file: week7/week7_exercises.md
         - file: week7/week7_papers.md
         - file: week7/week7_extras.md
+    - title: 'Week 8: Turbulence'
+      children:
+        - title: 'Reading'
+          file: week8/week8_reading.md
+        - file: week8/week8_papers.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md

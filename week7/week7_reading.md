@@ -72,12 +72,12 @@ $${\Delta P\over P} = \gamma {\Delta\rho\over \rho}.$$
 This can be rewritten as
 $${\delta P\over P} = \gamma{\delta \rho\over \rho}  -  \xi_z  \left[{d\ln P\over dz}-\gamma{d\ln \rho\over dz} \right]$$
 or
-\begin{equation}\label{eq:adiabatic}{\delta P\over \rho c_s^2} = {\delta \rho\over \rho} - {N^2\xi_z\over g},\end{equation}
+$$\label{eq:adiabatic}{\delta P\over \rho c_s^2} = {\delta \rho\over \rho} - {N^2\xi_z\over g},$$
 where we define the *Brunt-Väisälä frequency* $N$ and *convective discriminant* $\mathcal{A}$ according to
-$$N^2 = - g{\mathcal A} = -g\left[{d\ln \rho\over dz} - {1\over \gamma}{d\ln P\over dz}\right].$$
+$$\label{eq:Brunt} N^2 = - g{\mathcal A} = -g\left[{d\ln \rho\over dz} - {1\over \gamma}{d\ln P\over dz}\right].$$
 In addition, we also need the momentum equations 
 \begin{eqnarray}\label{eq:mom1}
--\rho\omega^2 \xi_z &=& -{d\delta P\over dz} - g\delta\rho\\
+-\rho\omega^2 \xi_z &=& -{d\delta P\over dz}+g\delta\rho\\
 -\rho\omega^2 \xi_x &=& -ik_x\delta P.	\label{eq:mom2}
 \end{eqnarray}
 Note that whereas we have assumed an $x$-dependence for the perturbations of $e^{ik_xx}$, we do not specify a functional form for the $z$-dependence; it will be determined by how the background changes with height. To solve the equations in a realistic atmosphere or star requires integration of the equations over height $z$. The equations form an eigenvalue problem: in general, only a certain set of frequencies $\{\omega_n\}$ give solutions that satisfy the boundary conditions at $z=0$ or $z=\infty$ ($r=0$ and $r=R$ in the case of a star).
