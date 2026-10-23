@@ -7,7 +7,7 @@ The due date for this assignment is **Thursday November 12th before 1pm**. Your 
 
 **Overview**. The goal of this exercise is to compute the oscillation frequencies and eigenmodes of the Sun. You will be able to identify the p-modes and g-modes and study their frequencies, and their eigenfunctions and how they relate to the internal structure.
 
-**Perturbation equations**. The equations describing adiabatic perturbations of a spherically-symmetric star are derived in the [Extra material](week7-extras) for Week 7 — see equations (12) and (13) of those notes, as well as equations (14) and (17) which give the boundary conditions at the centre and surface of the star.  
+**Perturbation equations**. The equations describing adiabatic perturbations of a spherically-symmetric star are derived in the [Extra material](week7-extras) for Week 7 — see equations (13) and (14) of those notes, as well as equations (15) and (18) which give the boundary conditions at the centre and surface of the star.  
 
 The perturbation equations consist of two ODEs for the radial displacement $\xi_r$ and the pressure perturbation $\delta P$ in the mode. They form an eigenvalue problem in that the boundary conditions at the centre and surface of the star can only be satisfied for a discrete set of mode frequencies (the eigenvalues). 
 The idea here is to integrate these equations using background quantities ($N^2$, $g$, $c_s$, $\rho$) from a model of the Sun, and to find the eigenvalues and corresponding eigenfunctions.
