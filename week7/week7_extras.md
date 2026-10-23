@@ -23,7 +23,7 @@ $${\Delta\rho\over\rho} = -\vec{\nabla}\cdot\xi$$
 $${1\over \gamma}{\delta P\over P} + {\xi_r\over \gamma}{d\ln P\over dr} = -{1\over r^2}{d(r^2\xi_r)\over dr} -{\xi_\theta\over r\sin\theta P^m_\ell}{\partial\over\partial\theta}(\sin\theta {\partial P^m_\ell\over \partial \theta}) + {m^2\xi_\phi\over r\sin^2\theta}$$
 $$\Rightarrow {1\over \gamma}{\delta P\over P} + {\xi_r\over \gamma}{d\ln P\over dr} = -{1\over r^2}{d(r^2\xi_r)\over dr} +\ell(\ell+1){\xi_\theta\over r},$$
 where we use
-$${1\over \sin\theta}{\partial\over\partial\theta}\left(\sin\theta {\partial P^m_\ell\over\partial\theta\right) =-\left[\ell(\ell+1)-{m^2\over\sin^2\theta}\right]P_\ell^m$$
+$${1\over \sin\theta}{\partial\over\partial\theta}\left(\sin\theta {\partial P^m_\ell\over\partial\theta}\right) =-\left[\ell(\ell+1)-{m^2\over\sin^2\theta}\right]P_\ell^m$$
 and the fact that $\xi_\phi=\xi_\theta$ (see momentum below).
 
 Momentum
