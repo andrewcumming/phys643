@@ -24,7 +24,7 @@ In the Kolmogorov cascade, is the energy located mostly at large scales or at sm
 
 If the internal luminosity of Jupiter is $10^{-10}\ L_\odot$, estimate the convective turnover time.
 
-In a turbulent convection zone, turbulent transport can be modelled with a turbulent diffusivity $\sim v_c H$ where $v_c$ is the convective speed and $H$ the pressure scale height (towards the center of the planet $H$ is some reasonable fraction of $R$. Look up microscopic diffusion coefficients inside Jupiter. How much larger is the turbulent diffusion coefficient?
+In a turbulent convection zone, turbulent transport can be modelled with a turbulent diffusivity $\sim v_c H$ where $v_c$ is the convective speed and $H$ the pressure scale height (towards the center of the planet $H$ is some reasonable fraction of $R$). Look up microscopic diffusion coefficients inside Jupiter. How much larger is the turbulent diffusion coefficient?
 
 ## 6. Simulating solar convection
 
