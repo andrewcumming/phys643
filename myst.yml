@@ -64,6 +64,11 @@ project:
           file: week8/week8_reading.md
         - file: week8/week8_exercises.md
         - file: week8/week8_papers.md
+    - title: 'Week 9: Rotating systems'
+      children:
+        - title: 'Reading'
+          file: week9/week9_reading.md
+        - file: week9/week9_papers.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
