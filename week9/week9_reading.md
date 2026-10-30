@@ -21,7 +21,7 @@ An interesting consequence of the centrifugal force in stars is **meridional cir
 
 ## The role of the Coriolis force
 
-The Coriolis force is often more important to consider than the centrifugal force because it gives rise to several new effects. The **Rossby number** $\mathrm{Ro}$ is a dimensionless number that measures the important of the Coriolis term compared to advection:
+The Coriolis force is often more important to consider than the centrifugal force because it gives rise to several new effects. The **Rossby number** $\mathrm{Ro}$ is a dimensionless number that measures the importance of the Coriolis term compared to advection:
 $$\mathrm{Ro} = {V^2/L\over 2 V\Omega} = {V\over 2\Omega L},$$
 where $L$ and $V$ are characteristic length and velocity scales in the flow. **Rotation is important when $\mathrm{Ro}\ll 1$**. 
 
@@ -59,22 +59,22 @@ or in vector form
 $$f\vec{u}_\perp = {1\over \rho} \hat{z} \times \vec{\nabla}_\perp P$$
 This shows that the flow is perpendicular to the pressure gradient, i.e. the flow is along isobars. An example is a high pressure region in the northern hemisphere: winds flow clockwise around the high pressure region, so that the Coriolis force on the wind balances the pressure gradient radiating out from the centre. This is known as a *anticyclone*. Similarly, a low pressure region forms a *cyclone* in which the winds are anticlockwise. You've probably seen these kind of flows on a weather map.
 
-The Coriolis force also plays a role in oscillations, for example modifiying the frequencies of g-modes. Referring back to equation {eq}`eq:mom1` from Week 7 and adding the Coriolis force, the horizontal components of the momentum equation become
+The Coriolis force also plays a role in oscillations, for example modifying the frequencies of g-modes. Referring back to equation {eq}`eq:mom1` from Week 7 and adding the Coriolis force, the horizontal components of the momentum equation become
 $$-\rho \omega^2 \xi_x - \rho 2\Omega (-i\omega\xi_y) = -ik_x \delta P$$
 $$-\rho \omega^2 \xi_y + \rho 2\Omega (-i\omega\xi_x) = -ik_y \delta P.$$
 If you set $\vec{k}\cdot\vec{\xi}=0$ (incompressible perturbations, this removes the sound waves to make things simpler) and then calculate the dispersion relation, you should find
 $$\omega^2 = N^2\left({k_\perp\over k}\right)^2 + (2\Omega)^2 \left({k_z\over k}\right)^2.$$
 We see that rotation adds an extra term to the dispersion relation. This extra term is present even when $N^2\rightarrow 0$. It represents a new class of modes, **inertial waves** coming from the rotation.
 
-Rotation also causes **rotational splitting** of oscillation modes with different azimuthal wavenumbers $m$. Consider a mode with frequency much larger than the rotation frequency, $\omega\gg\Omega$. This means that rotation is not large enough to affect the mode in the rotating frame. However, transforming from the rotating frame to the observers frame gives
+Rotation also causes **rotational splitting** of oscillation modes with different azimuthal wavenumbers $m$. Consider a mode with frequency much larger than the rotation frequency, $\omega\gg\Omega$. This means that rotation is not large enough to affect the mode in the rotating frame. However, transforming from the rotating frame to the observer's frame gives
 $$e^{im\phi} e^{-\omega t}\rightarrow e^{im(\phi+\Omega t)} e^{-\omega t}$$
 or
 $$e^{im\phi} e^{-i(\omega-m\Omega)t}$$
 so the observed frequency of the oscillation is
 $$\omega(\mathrm{observed}) = \omega\pm m\Omega.$$
-This would be seen as sidebands in the oscillation mode spectrum. We'll see an example of this in the [paper presentations](week9-papers) where seismology of red giants has been used to measured the rotation rate of the stellar core.
+This would be seen as sidebands in the oscillation mode spectrum. We'll see an example of this in the [paper presentations](week9-papers) where seismology of red giants has been used to measure the rotation rate of the stellar core.
 
-The Coriolis force also leads to entirely new set of waves known as r-modes or Rossby waves, but before getting to those we first need to discuss vorticity.
+The Coriolis force also leads to an entirely new set of waves known as r-modes or Rossby waves, but before getting to those we first need to discuss vorticity.
 
 ## Vorticity
 
@@ -93,7 +93,7 @@ For a barotropic flow, the baroclinic vector vanishes, and we have
 $${\partial\vec{\omega}\over\partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}).$$
 If you compare with the magnetic induction equation, you'll see that this is exactly the same form as the advection term in the induction equation. This tells us that just as magnetic field lines are advected by the flow (flux freezing), so too are the lines of vorticity or **vortex lines**. The vortex lines move with the fluid. An integral version of this statement is **Kelvin's theorem**
 $${D\over Dt}\oint \vec{u}.d\vec{\ell} = {D\over Dt}\int \vec{\omega}\cdot d\vec{S} =0,$$
-where the first integral is over a close material loop in the fluid, and the second is over a material surface. (Material meaning fixed in the fluid, in the Lagrangian sense).
+where the first integral is over a closed material loop in the fluid, and the second is over a material surface. (Material meaning fixed in the fluid, in the Lagrangian sense).
 
 The advection term can also be rewritten as
 $${\partial \vec{\omega}\over \partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}) = -(\vec{u}\cdot\vec{\nabla})\vec{\omega} + (\vec{\omega}\cdot\vec{\nabla})\vec{u}$$
@@ -102,18 +102,18 @@ $${D\vec{\omega}\over Dt} = (\vec{\omega}\cdot\vec{\nabla})\vec{u}.\label{eq:str
 This gives us another way to think about how vortices move in a flow. First consider the case where the  velocity is perpendicular to the local vorticity. Then equation {eq}`eq:stretchtilt` says that if the velocity varies along the vortex direction, a horizontal component of vorticity will start to grow. This will change the direction of vorticity; you can think of the vortex being tipped over by the shearing flow. This effect is known as **vortex tilting**. If on the other hand the velocity is along the vortex, then the vorticity will increase or decrease according to whether the vortex is being stretched or squeezed. This is known as **vortex stretching**. For example, if  the velocity is along the vortex direction and is getting larger moving up the vortex, then the vortex is stretched along its length. Conserving mass, the fluid column must get narrower. Angular momentum conservation then implies the vortex will spin faster.
 
 If we now introduce rotation, the left-hand side of the momentum equation now becomes
-$${\partial\vec{u}\over\partial t}  + (\vec{u}\cdot\vec{\nabla})\vec{\omega} + 2\vec{\Omega}\times\vec{u}.$$
+$${\partial\vec{u}\over\partial t}  + (\vec{u}\cdot\vec{\nabla})\vec{u} + 2\vec{\Omega}\times\vec{u}.$$
 After using the identity above to rewrite the nonlinear term and removing the gradient term, we get
 $${\partial\vec{u}\over\partial t} - \vec{u}\times\vec{\omega} + 2\vec{\Omega}\times\vec{u} = {\partial\vec{u}\over\partial t} + (\vec{\omega}+2\vec{\Omega})\times\vec{u}.$$
 We see that the effect of adding rotation is to introduce an extra term in the vorticity. The **absolute vorticity**
 $$\vec{\omega_a} = \vec{\omega} + 2\vec{\Omega}$$
 obeys the same vorticity equation as before. We refer to $\vec{\omega}$ (without the component from rotation) as the **relative vorticity**.
 
-This distinction has important consequences for fluid motion on a sphere. Consider for example a cyclone moving in the northern hemisphere. As we discussed, the fluid flow will be anti-clockwise around the low pressure centre of the cyclone, so the relative vorticity will be in the same direction as the local radial component of rotation $\hat{r} \Omega\sin\theta$ (where $\theta$ is the latitude measured from the equator). If the cyclone moves towards the north pole, $\theta$ grows and therefore so does the contribution to the absolute vorticity from the rotation term. In order to conserve absolute vorticity, the cyclone will reduce its relative vorticity and spin down to compensate for the fact it moved closer to the rotation axis. These kind of considerations are crucial for understanding the dynamics of vortices on a rotating sphere. The trade of between relative vorticity and rotation also provides a restoring force for a new kind of wave, the Rossby wave, which we discuss in the next section.
+This distinction has important consequences for fluid motion on a sphere. Consider for example a cyclone moving in the northern hemisphere. As we discussed, the fluid flow will be anti-clockwise around the low pressure centre of the cyclone, so the relative vorticity will be in the same direction as the local radial component of rotation $\hat{r} \Omega\sin\theta$ (where $\theta$ is the latitude measured from the equator). If the cyclone moves towards the north pole, $\theta$ grows and therefore so does the contribution to the absolute vorticity from the rotation term. In order to conserve absolute vorticity, the cyclone will reduce its relative vorticity and spin down to compensate for the fact it moved closer to the rotation axis. These kind of considerations are crucial for understanding the dynamics of vortices on a rotating sphere. The trade-off between relative vorticity and rotation also provides a restoring force for a new kind of wave, the Rossby wave, which we discuss in the next section.
 
 ## Rossby waves in atmospheres
 
-As a final application of the Coriolis force, we can dervie the dispersion relation for Rossby waves in an atmosphere.
+As a final application of the Coriolis force, we can derive the dispersion relation for Rossby waves in an atmosphere.
 
 It is common in atmospheric dynamics to make a local Cartesian approximation near some latitude $\theta_0$. The Coriolis parameter can then be expanded as
 $$f = 2\Omega \sin\theta\approx f_0 + \beta y,$$
