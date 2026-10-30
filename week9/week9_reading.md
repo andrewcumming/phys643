@@ -1,12 +1,12 @@
 # Week 9: Rotating systems
 
-## The importance of rotation
-
 Rotation is important in many astrophysical flows. It enters the equation of motion for the fluid in two ways. In the rotating frame, we need to add the **Coriolis force**,
 $$-\rho 2\vec{\Omega}\times\vec{u}$$
 (this is the force per unit volume) and the **centrifugal force**
 $$-\rho \vec{\Omega}\times (\vec{\Omega}\times \vec{r}) = \rho\left|\Omega\right|^2\vec{r}_\perp,$$
 where $\vec{r_\perp}$ is in a direction perpendicular to the rotation axis. You can get the sign for the Coriolis force if you remember that the acceleration is always to the right in the northern hemisphere.
+
+## Centrifugal balance
 
 The centrifugal force can be written as a gradient
 $$\vec{\Omega}\times\left(\vec{\Omega}\times\vec{r}\right) = -\vec{\nabla}\left({1\over 2}\left|\vec{\Omega}\times\vec{r}\right|^2\right),$$
@@ -17,11 +17,13 @@ In the case of a star or planet, this gives rise to a rotational bulge. Because 
 $$\Omega_B^2={GM\over R^3}$$ (equivalent to the Keplerian orbital frequency at the surface of the object). We can use this to estimate the size of the rotational bulge. For Earth, $2\pi/\Omega_B\approx 90$ min (the orbital period of low Earth orbit). Therefore
 $${\Omega^2\over \Omega_B^2} \approx \left({90\ \mathrm{min}\over 24\ \mathrm{h}}\right)^2\approx 0.3\% \approx {\Delta R\over R}.$$ The giant planets have much larger bulges. For Jupiter, $2\pi/\Omega_B= 2.4\ \mathrm{h}$ and the rotation period is close to 10 hours, giving $\Delta R/R\approx 6$\%. For Saturn, $2\pi/\Omega_B=3.6\ \mathrm{h}$ and rotation period of 11 hours gives $\Delta R/R \approx 10$\%.
 
-The Coriolis force gives rise to some new effects, so is often more important to consider than the centrifugal force. The **Rossby number** $\mathrm{Ro}$ is a dimensionless number that measures the important of the Coriolis term compared to advection:
-$$\mathrm{Ro} = {V^2/L\over 2 V\Omega} = {V\over 2\Omega L},$$
-where $L$ and $V$ are characteristic length and velocity scales in the flow. **Rotation is important when $\mathrm{Ro}\ll 1$**. 
+An interesting consequence of the centrifugal force in stars is **meridional circulation**. The latitude-dependence of the effective gravity leads to a specific latitude-dependence of the radiative flux, with a larger flux at the poles than at the equator (this is known as the von Zeipel theorem). In general, this will not match the distribution of energy generation rate inside the star. To achieve thermal equilibrium requires a circulation inside the star to redistribute energy. The circulation is on meridional planes ($r$-$\theta$ plane, $u_\phi=0$) and so is known as meridional circulation. In an isolated star, the circulation timescale is the Eddington-Sweet time $t_{ES}\approx t_{KH}(\Omega_B/\Omega)^2$, where $t_{KH}$ is the Kelvin-Helmholtz timescale $GM^2/RL$. In the Sun the timescale is actually shorter than this because angular momentum loss in the solar wind drives an additional circulation that redistributes angular momentum in the interior (e.g. see [Wood & Brummell (2012)](https://ui.adsabs.harvard.edu/abs/2012ApJ...755...99W/abstract)).
 
 ## The role of the Coriolis force
+
+The Coriolis force is often more important to consider than the centrifugal force because it gives rise to several new effects. The **Rossby number** $\mathrm{Ro}$ is a dimensionless number that measures the important of the Coriolis term compared to advection:
+$$\mathrm{Ro} = {V^2/L\over 2 V\Omega} = {V\over 2\Omega L},$$
+where $L$ and $V$ are characteristic length and velocity scales in the flow. **Rotation is important when $\mathrm{Ro}\ll 1$**. 
 
 Adding the Coriolis force to the momentum equation and with the centrifugal term absorbed into the potential, we have
 $${D\vec{u}\over Dt}  + 2\vec{\Omega}\times\vec{u} = -{\vec{\nabla}P\over \rho} + \vec{\nabla}\Phi.$$
@@ -81,7 +83,7 @@ $$\vec{\omega} = \vec{\nabla}\times \vec{u}$$
 so it tells you something about the local circulation of the fluid, and in fact you can show that the magnitude of vorticity is twice the local angular velocity of the fluid at any given point.
 Not every system that appears to be rotating has a non-zero vorticity. One way to visualize what is happening is to imagine placing a small "vorticity meter" into the fluid. The vorticity meter consists of two rods fixed perpendicular to one another, forming a right-angle. When placed into the flow, the meter will rotate with angular velocity $|\vec{\omega}|/2$. For example, a rigidly rotating fluid has $\vec{\omega}=2\vec{\Omega}$, we will see the vorticity meter rotate exactly once for every rotation period of the fluid. This must be the case, because if we go into the rotating frame the vorticity meter should appear stationary. However, in the case of a flow around a point with $u_\phi\propto 1/r$ (this corresponds to a *line vortex*), the vorticity meter is carried around by the flow without any local rotation. If you take the curl of this velocity field, you'll see that $\vec{\omega} =0$. To see such a vorticity meter in action, including the two cases just mentioned, you can look at the [NCFM movie on vorticity](https://www.youtube.com/watch?v=loCLkcYEWD4&list=PL0EC6527BE871ABA3&index=9) from around minute 3 to around minute 5.
 
-An evolution equation for vorticity can be derived by taking the curl of the momentum equation. A useful identity is
+To get some feel for how vorticity behaves, first consider a non-rotating fluid. An evolution equation for vorticity can be derived by taking the curl of the momentum equation. A useful identity is
 $$(\vec{u}\cdot \vec{\nabla})\vec{u} = -\vec{u}\times(\vec{\nabla}\times\vec{u}) + \vec{\nabla}\left({1\over 2}u^2\right),$$
 which we can use to rewrite the non-linear term in the momentum equation. This helps because the first term already includes a factor of $\vec{\nabla}\times\vec{u}=\vec{\omega}$, and the second term is a gradient, so it vanishes when we take the curl. The resulting equation is the **vorticity equation**
 $${\partial\vec{\omega}\over\partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}) + {\vec{\nabla}\rho\times\vec{\nabla}P\over \rho^2}.$$
@@ -93,16 +95,54 @@ If you compare with the magnetic induction equation, you'll see that this is exa
 $${D\over Dt}\oint \vec{u}.d\vec{\ell} = {D\over Dt}\int \vec{\omega}\cdot d\vec{S} =0,$$
 where the first integral is over a close material loop in the fluid, and the second is over a material surface. (Material meaning fixed in the fluid, in the Lagrangian sense).
 
-The advection can also be rewritten
+The advection term can also be rewritten as
 $${\partial \vec{\omega}\over \partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}) = -(\vec{u}\cdot\vec{\nabla})\vec{\omega} + (\vec{\omega}\cdot\vec{\nabla})\vec{u}$$
 or
 $${D\vec{\omega}\over Dt} = (\vec{\omega}\cdot\vec{\nabla})\vec{u}.\label{eq:stretchtilt}$$
-This gives us another way to think about how vortices move in a flow. If the velocity is perpendicular to the local vorticity, then equation {eq}`eq:stretchtilt` says that if the velocity varies along the vortex direction, a horizontal component of vorticity will start to grow, in other words the vortex will tilt. You can think of the vortex being tipped over by the shearing flow. This effect is known as **vortex tilting**. If on the other hand the velocity is along the vortex, then the vorticity will increase or decrease according to whether the vortex is being stretched or squeezed. This is known as **vortex stretching**. For example, if  the velocity is along the vortex direction and is getting larger moving up the vortex, then the vortex is stretched along its length. Conserving mass, the fluid column must get narrower. Angular momentum conservation then implies the vortex will spin faster.
+This gives us another way to think about how vortices move in a flow. First consider the case where the  velocity is perpendicular to the local vorticity. Then equation {eq}`eq:stretchtilt` says that if the velocity varies along the vortex direction, a horizontal component of vorticity will start to grow. This will change the direction of vorticity; you can think of the vortex being tipped over by the shearing flow. This effect is known as **vortex tilting**. If on the other hand the velocity is along the vortex, then the vorticity will increase or decrease according to whether the vortex is being stretched or squeezed. This is known as **vortex stretching**. For example, if  the velocity is along the vortex direction and is getting larger moving up the vortex, then the vortex is stretched along its length. Conserving mass, the fluid column must get narrower. Angular momentum conservation then implies the vortex will spin faster.
 
+If we now introduce rotation, the left-hand side of the momentum equation now becomes
+$${\partial\vec{u}\over\partial t}  + (\vec{u}\cdot\vec{\nabla})\vec{\omega} + 2\vec{\Omega}\times\vec{u}.$$
+After using the identity above to rewrite the nonlinear term and removing the gradient term, we get
+$${\partial\vec{u}\over\partial t} - \vec{u}\times\vec{\omega} + 2\vec{\Omega}\times\vec{u} = {\partial\vec{u}\over\partial t} + (\vec{\omega}+2\vec{\Omega})\times\vec{u}.$$
+We see that the effect of adding rotation is to introduce an extra term in the vorticity. The **absolute vorticity**
+$$\vec{\omega_a} = \vec{\omega} + 2\vec{\Omega}$$
+obeys the same vorticity equation as before. We refer to $\vec{\omega}$ (without the component from rotation) as the **relative vorticity**.
 
-## Rossby waves
+This distinction has important consequences for fluid motion on a sphere. Consider for example a cyclone moving in the northern hemisphere. As we discussed, the fluid flow will be anti-clockwise around the low pressure centre of the cyclone, so the relative vorticity will be in the same direction as the local radial component of rotation $\hat{r} \Omega\sin\theta$ (where $\theta$ is the latitude measured from the equator). If the cyclone moves towards the north pole, $\theta$ grows and therefore so does the contribution to the absolute vorticity from the rotation term. In order to conserve absolute vorticity, the cyclone will reduce its relative vorticity and spin down to compensate for the fact it moved closer to the rotation axis. These kind of considerations are crucial for understanding the dynamics of vortices on a rotating sphere. The trade of between relative vorticity and rotation also provides a restoring force for a new kind of wave, the Rossby wave, which we discuss in the next section.
 
-Coming soon ...
+## Rossby waves in atmospheres
+
+As a final application of the Coriolis force, we can dervie the dispersion relation for Rossby waves in an atmosphere.
+
+It is common in atmospheric dynamics to make a local Cartesian approximation near some latitude $\theta_0$. The Coriolis parameter can then be expanded as
+$$f = 2\Omega \sin\theta\approx f_0 + \beta y,$$
+where $f_0 = 2\Omega\sin\theta_0$ is a constant and the second term accounts for the variation with latitude, $y = R(\theta-\theta_0)$ and $\beta = 2\Omega\cos\theta/R$. If we keep the first term only, $f=f_0$, this is known as the **$f$-plane**; if we keep both terms, $f=f_0+\beta y$, this is known as the **$\beta$-plane**.
+
+Consider making perturbations around a stationary background state with the $\beta$-plane approximation. Also assume the perturbations are incompressible, so
+$${\partial u\over \partial x} + {\partial v\over \partial y} = 0.\label{eq:rossby1}$$
+The horizontal momentum equations are
+$${\partial u\over\partial t} -(f_0+\beta y)v = -{1\over \rho}{\partial P\over \partial x}$$
+$${\partial v\over\partial t} +(f_0+\beta y)u = -{1\over \rho}{\partial P\over \partial y}.$$
+Differentiate the first one with respect to $y$ and the second with respect to $x$:
+$${\partial\over\partial t}{\partial u\over \partial y} -(f_0+\beta y){\partial v\over \partial y} - \beta v = -{1\over \rho}{\partial^2 P\over \partial x\partial y}$$
+$${\partial\over\partial t}{\partial v\over\partial x} +(f_0+\beta y){\partial u\over \partial x} = -{1\over \rho}{\partial^2 P\over \partial x\partial y}.$$
+Subtracting these gives
+$${\partial\over\partial t}\left({\partial u\over \partial y}-{\partial v\over \partial x}\right) -\beta v = 0\label{eq:rossby2}$$
+(we could have also got this by perturbing the vorticity equation directly).
+
+Now look for solutions $\propto e^{ik_x x} e^{ ik_y y}e^{-i\omega t}$. Equations {eq}`eq:rossby1` and {eq}`eq:rossby2` then give
+$$ik_x u + i k_y v = 0$$
+$$-i\omega (ik_y u - i k_x v) - \beta v = 0$$
+$$\Rightarrow -i\omega (-ik_y {k_y\over k_x} v  - i k_x v) - \beta v = 0$$
+$$\Rightarrow \omega (k_y^2  +k_x^2) = -\beta k_x$$
+$$\Rightarrow \boxed{\omega  = -{\beta k_x\over k_x^2+k_y^2}}. \label{eq:rossbydispersion}$$
+which is the dispersion relation for the waves. Note that (i) $\omega\propto \beta$ which shows that the origin of these waves is in the variation of Coriolis parameter with latitude, and (ii) the phase velocity in the azimuthal direction $v_{p,x} = \omega/k_x$ is negative, so **Rossby waves travel westward** only. The physics of the wave is entirely due to the conservation of absolute vorticity we discussed earlier. A fluid element perturbed towards the pole changes its vorticity, and the resulting change in the flow advects neighbouring vortices in such a way as to cause a restoring force for the first vortex.
+
+There is a similar dispersion relation for $r$-modes, which are essentially Rossby waves in a rotating sphere. For a slowly-rotating ($\Omega\ll \Omega_B$) star, the $r$-mode dispersion relation in the rotating frame is 
+$$\omega = -{2m\Omega\over \ell(\ell+1)}$$
+(with $m>0$ and $\ell\geq m$). This is the equivalent of equation {eq}`eq:rossbydispersion` but now in spherical geometry. In the inertial (observer's) frame, the frequency is
+$$\omega_\mathrm{obs} = \omega + m\Omega = m\Omega\left[1 - {2\over \ell(\ell+1)}\right].$$ For example, if we take $\ell=2$ and $m=2$, we get $\omega=-(2/3)\Omega$ in the rotating frame and $\omega = +(4/3)\Omega$ in the inertial frame. The wave is retrograde in the rotating frame and prograde in the inertial frame. This is the basis of the CFS instability that we will hear more about in the [paper presentations](week9-papers).
 
 
 ## Reading questions
