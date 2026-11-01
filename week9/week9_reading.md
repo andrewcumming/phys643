@@ -95,7 +95,7 @@ If you compare with the magnetic induction equation, you'll see that this is exa
 $${D\over Dt}\oint \vec{u}.d\vec{\ell} = {D\over Dt}\int \vec{\omega}\cdot d\vec{S} =0,$$
 where the first integral is over a closed material loop in the fluid, and the second is over a material surface. (Material meaning fixed in the fluid, in the Lagrangian sense).
 
-The advection term can also be rewritten as
+For an incompressible flow, the advection term can also be rewritten as
 $${\partial \vec{\omega}\over \partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}) = -(\vec{u}\cdot\vec{\nabla})\vec{\omega} + (\vec{\omega}\cdot\vec{\nabla})\vec{u}$$
 or
 $${D\vec{\omega}\over Dt} = (\vec{\omega}\cdot\vec{\nabla})\vec{u}.\label{eq:stretchtilt}$$
@@ -148,5 +148,6 @@ $$\omega_\mathrm{obs} = \omega + m\Omega = m\Omega\left[1 - {2\over \ell(\ell+1)
 ## Reading questions
 
 - Make a list of the different physical effects that arise from the Coriolis force.
+- Calculate $\vec{\nabla}\times\vec{u}$ for the line vortex flow $v_\phi\propto 1/r$ ($r$ is the cylindrical radius) and confirm that this flow has zero vorticity. Draw a sketch of what the right-angle vorticity meter described in the notes would look over one rotation of the fluid for (i) the line vortex flow and (ii) rigid rotation.
 - Derive equation {eq}`eq:vorticityeq`.
 - If you wanted to study waves close to the rotational equator, would you use the $f$-plane or $\beta$-plane?
