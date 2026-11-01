@@ -69,9 +69,9 @@ We see that rotation adds an extra term to the dispersion relation. This extra t
 Rotation also causes **rotational splitting** of oscillation modes with different azimuthal wavenumbers $m$. Consider a mode with frequency much larger than the rotation frequency, $\omega\gg\Omega$. This means that rotation is not large enough to affect the mode in the rotating frame. However, transforming from the rotating frame to the observer's frame gives
 $$e^{im\phi} e^{-\omega t}\rightarrow e^{im(\phi+\Omega t)} e^{-\omega t}$$
 or
-$$e^{im\phi} e^{-i(\omega-m\Omega)t}$$
-so the observed frequency of the oscillation is
-$$\omega(\mathrm{observed}) = \omega\pm m\Omega.$$
+$$e^{im\phi} e^{-i(\omega-m\Omega)t},$$
+modifying the frequency in the observer's frame. Including both positive and negative values of $m$, the observed frequency of the oscillation is
+$$\omega(\mathrm{observed}) = \omega\pm |m|\Omega.$$
 This would be seen as sidebands in the oscillation mode spectrum. We'll see an example of this in the [paper presentations](week9-papers) where seismology of red giants has been used to measure the rotation rate of the stellar core.
 
 The Coriolis force also leads to an entirely new set of waves known as r-modes or Rossby waves, but before getting to those we first need to discuss vorticity.
@@ -86,7 +86,7 @@ Not every system that appears to be rotating has a non-zero vorticity. One way t
 To get some feel for how vorticity behaves, first consider a non-rotating fluid. An evolution equation for vorticity can be derived by taking the curl of the momentum equation. A useful identity is
 $$(\vec{u}\cdot \vec{\nabla})\vec{u} = -\vec{u}\times(\vec{\nabla}\times\vec{u}) + \vec{\nabla}\left({1\over 2}u^2\right),$$
 which we can use to rewrite the non-linear term in the momentum equation. This helps because the first term already includes a factor of $\vec{\nabla}\times\vec{u}=\vec{\omega}$, and the second term is a gradient, so it vanishes when we take the curl. The resulting equation is the **vorticity equation**
-$${\partial\vec{\omega}\over\partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}) + {\vec{\nabla}\rho\times\vec{\nabla}P\over \rho^2}.$$
+$${\partial\vec{\omega}\over\partial t} = \vec{\nabla}\times (\vec{u}\times\vec{\omega}) + {\vec{\nabla}\rho\times\vec{\nabla}P\over \rho^2}.\label{eq:vorticityeq}$$
 The final term is the baroclinic vector that we met earlier, coming from taking the curl of the pressure gradient term.
 
 For a barotropic flow, the baroclinic vector vanishes, and we have
@@ -147,4 +147,6 @@ $$\omega_\mathrm{obs} = \omega + m\Omega = m\Omega\left[1 - {2\over \ell(\ell+1)
 
 ## Reading questions
 
-Coming soon ...
+- Make a list of the different physical effects that arise from the Coriolis force
+- Derive equation {eq}`eq:vorticityeq`.
+- If you wanted to study waves close to the rotational equator, would you use the $f$-plane or $\beta$-plane?
