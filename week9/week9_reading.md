@@ -147,6 +147,6 @@ $$\omega_\mathrm{obs} = \omega + m\Omega = m\Omega\left[1 - {2\over \ell(\ell+1)
 
 ## Reading questions
 
-- Make a list of the different physical effects that arise from the Coriolis force
+- Make a list of the different physical effects that arise from the Coriolis force.
 - Derive equation {eq}`eq:vorticityeq`.
 - If you wanted to study waves close to the rotational equator, would you use the $f$-plane or $\beta$-plane?
