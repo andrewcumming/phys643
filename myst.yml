@@ -74,10 +74,6 @@ project:
         - file: comp1.md
         - file: comp2.md
         - file: comp3.md
-        - title: 'Solutions'
-          children:
-            - title: 'Exercise 1 solutions'
-              file: solutions_comp1.ipynb
 site:
   template: book-theme
   # title:
