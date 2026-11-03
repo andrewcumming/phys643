@@ -148,6 +148,6 @@ $$\omega_\mathrm{obs} = \omega + m\Omega = m\Omega\left[1 - {2\over \ell(\ell+1)
 ## Reading questions
 
 - Make a list of the different physical effects that arise from the Coriolis force.
-- Calculate $\vec{\nabla}\times\vec{u}$ for the line vortex flow $v_\phi\propto 1/r$ ($r$ is the cylindrical radius) and confirm that this flow has zero vorticity. Draw a sketch of what the right-angle vorticity meter described in the notes would look over one rotation of the fluid for (i) the line vortex flow and (ii) rigid rotation.
+- Calculate $\vec{\nabla}\times\vec{u}$ for the line vortex flow $v_\phi\propto 1/r$ ($r$ is the cylindrical radius) and confirm that this flow has zero vorticity. Draw a sketch of what the right-angle vorticity meter described in the notes would look like over one rotation of the fluid for (i) the line vortex flow and (ii) rigid rotation.
 - Derive equation {eq}`eq:vorticityeq`.
 - If you wanted to study waves close to the rotational equator, would you use the $f$-plane or $\beta$-plane?
