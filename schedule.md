@@ -26,7 +26,7 @@
 | | | **Computational exercise 2 due**|
 | Th Oct 29 | Astrophysical turbulence | [Reading](/week8-reading), [Exercises](/week8-exercises) |
 | T Nov 3 | *Presentations 7* | [Papers](/week8-papers) |
-| Th Nov 5 | Rotating fluids/planetary atmospheres | [Reading](/week9-reading) |
+| Th Nov 5 | Rotating systems | [Reading](/week9-reading), [Exercises](/week9-exercises) |
 | T Nov 10 | *Presentations 8* | [Papers](/week9-papers) |
 | Th Nov 12 | Astrophysical plasmas | |
 | T Nov 17 | *Presentations 9* | |
