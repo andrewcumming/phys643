@@ -68,6 +68,7 @@ project:
       children:
         - title: 'Reading'
           file: week9/week9_reading.md
+        - file: week9/week9_exercises.md
         - file: week9/week9_papers.md
     - title: 'Computational Exercises'
       children:

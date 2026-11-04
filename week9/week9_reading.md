@@ -47,7 +47,7 @@ $$f = 2\Omega\sin\theta,$$
 equation {eq}`eq:momstrongrotation` becomes
 $$-f {\partial u_\perp\over \partial z} = {1\over \rho^2} \vec{\nabla}\times \left(-\rho g\hat{z}\right)$$
 or
-$$\boxed{ {\partial u_\perp\over \partial z} = {g\over f\rho} \hat{z}\times \vec{\nabla}\rho}.$$
+$$\boxed{ {\partial u_\perp\over \partial z} = {g\over f\rho} \hat{z}\times \vec{\nabla}\rho}.\label{eq:thermalwind}$$
 This shows that *horizontal density gradients are associated with vertical shear* of the horizontal flow, the thermal wind.
 
 The dynamical balance when $\mathrm{Ro}\ll 1$ is **geostrophic balance**,
