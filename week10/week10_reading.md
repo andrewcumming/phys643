@@ -168,6 +168,8 @@ or alternatively when the collision time $\tau = \lambda/v$ becomes large compar
 
 3. Also check the values of plasma frequency and skin depth at the centre of the Sun.
 
+4. Check the statement that $f(v_\parallel)$ is a decreasing function of velocity for a Maxwell-Boltzmann distribution. Why is this important?
+
 
 
 
