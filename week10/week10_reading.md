@@ -63,7 +63,7 @@ Taking $\vec{k}\times$ equation {eq}`eq:pert3`, using this identity and then sub
 $$-k^2\delta\vec{E} + \vec{k}(\vec{k}\cdot\delta\vec{E}) = -{\omega^2\over c^2}\epsilon\delta\vec{E}.\label{eq:dispcold}$$
 
 If $\boxed{\vec{k}\cdot\delta\vec{E}=0}$, i.e. the electric field perturbations are perpendicular to the wave direction (transverse wave), we get the dispersion relation
-$$\boxed{\omega^2 = {c^2k^2\over \epsilon} = {c^2k^2\over n^2}},$$
+$$\boxed{\omega^2 = {c^2k^2\over \epsilon} = {c^2k^2\over n^2}},\label{eq:colddispersion}$$
 where $n = \sqrt{\epsilon}$ is the refractive index. For $\omega>\omega_P$, $\epsilon$ is real and less than 1, so we have a **propagating transverse wave** with phase and group velocities
 $$v_p = {\omega\over k} = {c\over n}; \hspace{1cm} v_g = {\partial \omega\over \partial k} = nc.$$
 This is the usual electromagnetic wave but modified by the plasma currents.
@@ -92,9 +92,9 @@ Another important kind of wave is a **Whistler wave**. This happens when we intr
 $$-i\omega m_e \delta \vec{u} = -e \delta \vec{E} - {e\over c}\delta\vec{u}\times\vec{B}_0\label{eq:whistler1}$$
 $$i\vec{k}\times\delta\vec{B} = -{4\pi\over c}n_ee\delta\vec{u} + {1\over c}(-i\omega)\delta\vec{E}\label{eq:whistler2}$$
 $$i\vec{k}\times\delta\vec{E} = -{1\over c}(-i\omega) \delta\vec{B},\label{eq:whistler3}$$
-where $\vec{B}_0$ is the background magnetic field, assumed constant so that $\vec{\nabla}\times \vec{B}_0=0$.
+where $\vec{B}_0$ is the background magnetic field, assumed constant so that $\vec{\nabla}\times \vec{B}_0=0$. We are again assuming the ions remain fixed on the timescale of the wave.
 
-Let's consider the case where $\vec{B}_0$ lies in the $z$-direction and the wave also propagates in the $z$-direction. Transverse waves then have $\delta\vec{E}$ and $\delta\vec{B}$ in the $x$-$y$ plane. The components of the momentum equation can then be written (combining equations {eq}`eq:whistler1` and {eq}`eq:whistler3`)
+To simplify the algebra, we can consider the case where $\vec{B}_0$ lies in the $z$-direction and the wave also propagates in the $z$-direction. Transverse waves then have $\delta\vec{E}$ and $\delta\vec{B}$ in the $x$-$y$ plane. The components of the momentum equation can then be written (combining equations {eq}`eq:whistler1` and {eq}`eq:whistler3`)
 $$-i\omega\delta u_x + \Omega_c \delta u_y = -\Omega_c {\omega\over k}{\delta B_y\over B_0}$$
 $$-i\omega\delta u_y - \Omega_c \delta u_x = \Omega_c {\omega\over k}{\delta B_x\over B_0},$$
 where the electron cyclotron frequency
@@ -106,14 +106,16 @@ $$\boxed{(\omega \pm \Omega_c)\delta u_\pm = \mp \Omega_c{\omega\over k}{\delta 
 Similarly, equations {eq}`eq:whistler2` and {eq}`eq:whistler3` give
 $$\boxed{{\delta B_\pm\over B_0} \left(1-{\omega^2\over c^2k^2}\right) = \pm {4\pi n_e e^2\over m}{m c\over eB_0}{\delta u_\pm\over kc^2}= \pm {\omega_P^2\over \Omega_c}{\delta u_\pm\over kc^2}}.$$
 Eliminating $\delta B_\pm$ and $\delta u_\pm$ then gives the dispersion relation
-$$\boxed{\omega^2 = c^2k^2 + {\omega_P^2\omega\over \omega\pm \Omega_c}},$$
-where the sign is for the left and right circular polarizations.
+$$\boxed{\omega^2 = c^2k^2 + {\omega_P^2\omega\over \omega\pm \Omega_c}},\label{eq:dispersionB}$$
+where the sign is for the left and right circular polarizations. When $\Omega_c\rightarrow 0$, the dispersion relation reduces to equation {eq}`eq:colddispersion`, the cold plasma dispersion relation without the magnetic field.
 
-At low frequencies, this becomes
-$$\omega = {c^2k^2\Omega_c\over \omega_P^2} = \Omega_c (kd_e)^2,$$
-where $d_e = c/\omega_P$ is known as the **electron skin depth**. It is the lengthscale above which the electron mobility modifies the electromagnetic wave dispersion relation. The wave involves electrons spiralling around the magnetic field lines, with the ions held fixed. This kind of dynamics happens on scales smaller than the **ion skin depth** $d_i = c/\omega_{P,i}$, where $\omega_{P,i}=(4\pi n_i Z^2e^2/m_i)^{1/2}$, where the ion inertia holds them essentially fixed during the motion. At larger scales, the ions have time to move and we are back to the MHD picture with Alfvèn waves for example.
+Equation {eq}`eq:dispersionB` has a branch at low frequencies
+$$\omega = {c^2k^2\Omega_c\over \omega_P^2}$$
+that goes to zero as $B\rightarrow 0$. The wave involves electrons spiralling around the magnetic field lines, with the ions held fixed. Whether the wave is right or left-handed depends on whether the wave travels parallel or antiparallel to the background magnetic field. The frequency can also be written as 
+$$\omega = \Omega_c (kd_e)^2,$$
+where $d_e = c/\omega_P$ is known as the **electron skin depth**. It is the lengthscale below which electron inertia becomes important and the plasma response modifies the electromagnetic wave dispersion relation. The corresponding length for ions is the **ion skin depth** $d_i = c/\omega_{P,i}$, where $\omega_{P,i}=(4\pi n_i Z^2e^2/m_i)^{1/2}$. Whistler waves have wavelengths between the ion and electron skin depths, so $kd_e\ll 1$ but $kd_i\gg 1$. This means that the frequency of the waves is smaller than the electron cyclotron frequency but larger than the ion cyclotron frequency (so the ions are effectively stationary).
 
-The dynamics of Whistler waves has a connection to the Hall effect. The Hall effect involves the relative motion of electrons relative to ions. For example, the laboratory Hall effect has ions fixed in a metal lattice, and the current-carrying electrons are deflected by the magnetic field. A similar thing happens in neutron star crusts where the ions are held immobile in the solid. The evolution of the magnetic field due to the Hall effect is believed to be one of the mechanisms driving magnetar flares.
+The dynamics of Whistler waves has a connection to the Hall effect. The Hall effect involves the relative motion of electrons relative to ions. For example, the laboratory Hall effect has ions fixed in a metal lattice, and the current-carrying electrons are deflected by the magnetic field. A similar thing happens in neutron star crusts where the ions are held immobile in the solid. The evolution of the magnetic field due to the Hall effect is believed to be one of the mechanisms driving magnetic activity in magnetars.
 
 ## Anisotropic conductivity
 
@@ -121,5 +123,6 @@ The dynamics of Whistler waves has a connection to the Hall effect. The Hall eff
 ## Reading questions
 
 1. Show that the dispersion relation for electromagnetic waves in a plasma can be written as $\omega^2 = \omega_P^2 + c^2k^2$. Why does this expression show that $\omega$ has to be $>\omega_P$ for a propagating wave?
+
 
 
