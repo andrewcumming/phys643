@@ -119,10 +119,55 @@ The dynamics of Whistler waves has a connection to the Hall effect. The Hall eff
 
 ## Anisotropic conductivity
 
+One interesting effect in a magnetized plasma is that the electrical and thermal conductivities become anisotropic. The reason is that electrons spiral around magnetic field lines, so that their motion perpendicular to the field is inhibited. 
+
+Before looking at the effect of the magnetic field, consider a conduction electron moving in a plasma undergoing collisions on a timescale $\tau$. In steady state, its velocity will be determined by the balance between the acceleration due to the electric field and the drag force,
+$$-e\vec{E} = {m_e \vec{v}\over \tau}.$$
+The electric current is
+$$\vec{J} = -n_e e \vec{v} = {n_e e^2\tau\over m} \vec{E} = \sigma \vec{E},$$
+where the electrical conductivity is given by
+$$\sigma = {n_e e^2\tau\over m_e}.$$
+Taking the scaling for the Coulomb cross-section from [Week 1](week1-reading#what-is-a-fluid), the collision time is $\tau\propto T^{3/2}/n$ which gives a conductivity $\sigma\propto T^{3/2}$ known as the Spitzer conductivity (with an additional correction from the Coulomb logarithm, I've ignored that here).
+
+If we now introduce a magnetic field, the equation of motion becomes
+$$-e\vec{E} - {e\over c}\vec{v}\times\vec{B} = {m_e \vec{v}\over \tau}$$
+$$\Rightarrow {n_ee^2\tau\over m}\vec{E} + {n_e e^2\tau\over mc}\vec{v}\times\vec{B} = -n_e e\vec{v}$$
+$$\Rightarrow \sigma \vec{E} - \Omega_c\tau\vec{J}\times\hat{b} = \vec{J},\label{eq:EJtoinvert}$$
+where we write the unit vector along the magnetic field direction as $\hat{b}$. We can see that the relationship between $\vec{J}$ and $\vec{E}$ is now more complicated, and in particular $\vec{J}$ and $\vec{E}$ are no longer in the same direction! The conductivity has become a tensor quantity rather than a scalar.
+
+Taking the dot product with $\vec{b}$ gives
+$$\sigma \vec{b}\cdot\vec{E} = \vec{b} \cdot\vec{J}\Rightarrow J_\parallel = \sigma E_\parallel.$$ This shows that the conductivity along the field is the same as the non-magnetized conductivity. To get the conductivity in the other directions, choose a direction for the magnetic field $\hat{b}=\hat{z}$. Then the components of equation {eq}`eq:EJtoinvert` are in matrix form
+$$\sigma \begin{pmatrix}
+E_x\\E_y\\E_z
+\end{pmatrix} = \begin{pmatrix} 1 & \Omega_c\tau & 0\\ -\Omega_c\tau & 1 & 0\\ 0 & 0 & 1  \end{pmatrix}\begin{pmatrix}
+J_x\\J_y\\J_z
+\end{pmatrix}.
+$$
+We can easily invert this (you just need to do a 2x2 inversion) to get
+$$\begin{pmatrix}
+J_x\\J_y\\J_z
+\end{pmatrix} = \sigma\begin{pmatrix} {1\over 1+(\Omega_c\tau)^2} & -{\Omega_c\tau\over 1+(\Omega_c\tau)^2} & 0\\ {\Omega_c\tau\over 1+(\Omega_c\tau)^2} & {1\over 1+(\Omega_c\tau)^2} & 0\\ 0 & 0 & 1  \end{pmatrix}\begin{pmatrix}
+E_x\\E_y\\E_z
+\end{pmatrix}.
+$$
+This shows that the parallel conductivity is the same as the non-magnetic conductivity, $J_z=\sigma E_z$, as expected,
+$$\sigma_\parallel = \sigma.$$ The perpendicular conductivity (for example looking at the $J_x$ that arises from $E_x$) is
+$$\sigma_\perp = {\sigma\over 1+(\Omega_c\tau)^2}.$$ This is often referred to as the Pedersen conductivity. There is also a Hall conductivity (for example giving $J_y$ for an applied $E_x$) caused by the deflection of the electrons by the magnetic field,
+$$\sigma_H = \sigma{\Omega_c\tau\over 1+ (\Omega_c\tau)^2}.$$
+
+Anisotropic conductivity arises whenever the mean free path of particles is larger than the gyroradius
+$$\lambda > {v\over \Omega_c}$$
+or alternatively when the collision time $\tau = \lambda/v$ becomes large compared to $\Omega_c^{-1}$. It is important in galaxy clusters as well as magnetized envelopes of white dwarfs and neutron stars.
+
 
 ## Reading questions
 
-1. Show that the dispersion relation for electromagnetic waves in a plasma can be written as $\omega^2 = \omega_P^2 + c^2k^2$. Why does this expression show that $\omega$ has to be $>\omega_P$ for a propagating wave?
+1. Calculate the magnitude of the Debye length at the centre of the Sun. Is the plasma at the centre of the Sun weakly-coupled?
+
+2. Show that the dispersion relation for electromagnetic waves in a plasma can be written as $\omega^2 = \omega_P^2 + c^2k^2$. Why does this expression show that $\omega$ has to be $>\omega_P$ for a propagating wave?
+
+3. Also check the values of plasma frequency and skin depth at the centre of the Sun.
+
 
 
 
