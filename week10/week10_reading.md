@@ -42,19 +42,19 @@ At low frequencies, where the ions and electrons can move together, a plasma sup
 ### Cold plasma waves
 
 To see what the high frequency modes look like, we can perturb a plasma assuming that the ions remain at rest and only the electrons respond to the perturbations. The background state is at rest and has $E=0$ and $B=0$. In the limit of a **cold plasma** we can neglect the electron pressure. The linear perturbation equations are then
-$$-m_e n i\omega\delta \vec{u} = -e n \delta \vec{E}$$
-$$\vec{\nabla}\times\delta\vec{B} = -{4\pi\over c}ne\delta\vec{u} + {1\over c}(-i\omega)\delta\vec{E}$$
+$$-m_e n_e i\omega\delta \vec{u} = -e n_e \delta \vec{E}$$
+$$\vec{\nabla}\times\delta\vec{B} = -{4\pi\over c}n_ee\delta\vec{u} + {1\over c}(-i\omega)\delta\vec{E}$$
 $$\vec{\nabla}\times\delta\vec{E} = -{1\over c}(-i\omega) \delta\vec{B},$$
 which are the electron momentum equation, Ampère's law and Faraday's law. Using the momentum equation to substitute for $\delta\vec{u}$ in Ampère's law gives
 $$\vec{\nabla}\times \delta\vec{B} = - {i\omega\over c}\delta\vec{E} \left(1-{\omega_P^2\over \omega^2}\right) = -{i\omega\over c} \epsilon \delta\vec{E},$$
 where the **plasma frequency** $\omega_P$ is given by
-$$\boxed{\omega_P^2 = {4\pi ne^2\over m_e}},$$
+$$\boxed{\omega_P^2 = {4\pi n_ee^2\over m_e}},$$
 and we define the **dielectric constant** of the plasma
 $$\boxed{\epsilon = 1 - {\omega_P^2\over \omega^2}}.$$
-Plugging numbers into the expression for plasma frequency gives $f_P = \omega_P/2\pi \approx 10\ \mathrm{kHz}\ n^{1/2}$.
+Plugging numbers into the expression for plasma frequency gives $f_P = \omega_P/2\pi \approx 9.0\ \mathrm{kHz}\ n_e^{1/2}$.
 
 To see the waves, we can look for solutions $\propto e^{i\vec{k}\cdot\vec{r}}$. The perturbation equations are then
-$$-i m_e \omega n \delta \vec{u} = -e n \delta \vec{E}\label{eq:pert1}$$
+$$-i m_e \omega n_e \delta \vec{u} = -e n_e \delta \vec{E}\label{eq:pert1}$$
 $$i\vec{k}\times\delta\vec{B} = - {i\omega\over c}\epsilon\delta\vec{E}\label{eq:pert2}$$
 $$i\vec{k}\times\delta\vec{E} = {i\omega\over c} \delta\vec{B}.\label{eq:pert3}$$
 These equations can be used to obtain a dispersion relation for the waves. We can use the identity
@@ -76,12 +76,12 @@ Looking at equation {eq}`eq:dispcold` we can see that there is another possibili
 ### Warm plasma waves and Landau damping
 
 A full analysis of the effect of temperature on the wave spectrum requires perturbing the Vlasov equation, which is the equation for the evolution of the distribution functions of the electrons and ions in the presence of the electric and magnetic fields. However, we can get a sense of what happens by using a fluid prescription for the electrons. Adding the pressure gradient terms back into the momentum equation for the electrons gives
-$$-i\omega m_e n \delta \vec{u} = -e n \delta \vec{E} - {3 P\over n}\vec{\nabla}\delta n,\label{eq:pert4}$$
+$$-i\omega m_e n_e \delta \vec{u} = -e n_e \delta \vec{E} - {3 P\over n_e}\vec{\nabla}\delta n_e,\label{eq:pert4}$$
 where we've assumed a relation $\delta P = (3 P/n) \delta n$ which comes from the full calculation and depends on the electron distribution function (e.g. Maxwellian at temperature $T$). As before, we are looking at high frequency waves where ion motion is not important. Unlike in the cold plasma, the electron density perturbation $\delta n$ now appears in the equations. We then need to also include the continuity and Poisson equations:
-$$-i\omega\delta n + n\vec{\nabla}\cdot\delta\vec{u} = 0\label{eq:pert5}$$
-$$\vec{\nabla}\cdot\delta\vec{E} = -4\pi e \delta n.\label{eq:pert6}$$
+$$-i\omega\delta n_e + n_e\vec{\nabla}\cdot\delta\vec{u} = 0\label{eq:pert5}$$
+$$\vec{\nabla}\cdot\delta\vec{E} = -4\pi e \delta n_e.\label{eq:pert6}$$
 Again assuming perturbations $\propto e^{i\vec{k}\cdot\vec{r}}$ and taking $\vec{k}\parallel \delta\vec{E}$ for the longitudinal wave, equations {eq}`eq:pert4` to {eq}`eq:pert6` give the dispersion relation
-$$\boxed{\omega^2 = \omega_P^2 + k^2 {3 P\over m_en}= \omega_P^2 + k^2 {3 k_BT\over m_e} }.\label{eq:warmdispersion}$$
+$$\boxed{\omega^2 = \omega_P^2 + k^2 {3 P\over m_en_e}= \omega_P^2 + k^2 {3 k_BT\over m_e} }.\label{eq:warmdispersion}$$
 We see that the effect of non-zero temperature is to add a wavelength-dependent term to the dispersion relation. This is the same longitudinal mode that we found for cold plasmas, but now with a non-zero group velocity. This is known as a **Langmuir wave**. Equation {eq}`eq:warmdispersion` is valid in the long-wavelength limit; the kinetic approach (perturbing the Vlasov equation) is needed when $k\lambda_D$ is no longer small.
 
 Including the particle distribution functions in the analysis also reveals an important new effect: **Landau damping**. Resonant particle-wave interactions occur for particles moving with velocities close to the phase velocity of the wave (more precisely particles with the component of velocity in the direction of the wave close to the wave phase velocity). If the particles are moving faster than the wave, particles lose energy, whereas if the particles are moving slower than the wave, they gain energy. The net transfer of energy therefore depends on the slope of the particle distribution function with velocity. For a Maxwellian distribution, $f(v_\parallel)$ decreases with increasing particle velocity, so that there are more particles on the slower side of the resonance than on the faster side of the resonance. The net effect is therefore for the wave to lose energy. In the full calculation, this appears as an imaginary part of the wave frequency.
