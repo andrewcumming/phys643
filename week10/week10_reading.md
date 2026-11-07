@@ -37,11 +37,11 @@ Screening is very important to take into account when calculating nuclear reacti
 
 ## Plasma waves and particle-wave interactions
 
-At low frequencies, where the ions and electrons can move together, a plasma supports the same set of modes that we have seen before: MHD fast and slow acoustic modes (these are called ion-acoustic modes in this context), and Alfvèn waves. At high frequencies, however, where the ions are not able to respond due to their large mass, the electron motion relative to the ions supports new kinds of waves.
+At low frequencies, where the ions and electrons can move together, a plasma supports the same set of modes that we have seen before based on the MHD equations: fast and slow magnetosonic waves and Alfvèn waves. Plasmas also have ion-acoustic waves, compressive waves with restoring force from electron pressure and the ions supplying the inertia. At high frequencies, where the ions are not able to respond due to their large mass, the electron motion relative to the ions modifies the dispersion relation for transverse electromagnetic waves and introduces a new longitudinal mode, the Langmuir wave.
 
 ### Cold plasma waves
 
-To see what waves these high frequency modes look like, we can perturb a plasma assuming that the ions remain at rest and only the electrons respond to the perturbations. The background state is at rest and has $E=0$ and $B=0$. In the limit of a **cold plasma** we can neglect the electron pressure. The linear perturbation equations are then
+To see what the high frequency modes look like, we can perturb a plasma assuming that the ions remain at rest and only the electrons respond to the perturbations. The background state is at rest and has $E=0$ and $B=0$. In the limit of a **cold plasma** we can neglect the electron pressure. The linear perturbation equations are then
 $$-m_e n i\omega\delta \vec{u} = -e n \delta \vec{E}$$
 $$\vec{\nabla}\times\delta\vec{B} = -{4\pi\over c}ne\delta\vec{u} + {1\over c}(-i\omega)\delta\vec{E}$$
 $$\vec{\nabla}\times\delta\vec{E} = -{1\over c}(-i\omega) \delta\vec{B},$$
@@ -69,22 +69,22 @@ $$v_p = {\omega\over k} = {c\over n}; \hspace{1cm} v_g = {\partial \omega\over \
 This is the usual electromagnetic wave but modified by the plasma currents.
 Note that since $n<1$ the phase velocity is larger than the speed of light $c$, but the group velocity (the speed of information propagation) is smaller than $c$.
 
-For low frequencies $\omega<\omega_P$, $\epsilon$ is negative, giving an imaginary $k$ or in other words an evanescent wave. Only waves with $\omega>\omega_P$ can propagate through a plasma. A way to think about this physically is that when the frequency is smaller than the plasma frequency, there is plenty of time for the electrons to move, shorting out the electric field of the wave. At high frequencies on the other hand, the electrons do not have time to respond.
+For low frequencies $\omega<\omega_P$, $\epsilon$ is negative, giving $k^2<0$ or in other words an evanescent wave ($k$ is imaginary). Only waves with $\omega>\omega_P$ can propagate through a plasma. A way to think about this physically is that when the frequency is smaller than the plasma frequency, there is plenty of time for the electrons to move, shorting out the electric field of the wave. At high frequencies on the other hand, the electrons do not have time to respond.
 
-Looking at equation {eq}`eq:dispcold` we can see that there is another possibility: a **longitudinal wave** with $\vec{k}\parallel\delta\vec{E}$. In that case, the left-hand side cancels and for a non-trivial solution we need $\epsilon=0$ or $\boxed{\omega = \omega_P}$. This is known as a **Langmuir oscillation**. It has $v_g=0$, so is non-propagating. It corresponds physically to a standing longitudinal oscillation of the plasma.
+Looking at equation {eq}`eq:dispcold` we can see that there is another possibility: a **longitudinal wave** with $\vec{k}\parallel\delta\vec{E}$. In that case, the left-hand side cancels and for a non-trivial solution we need $\epsilon=0$ or $\boxed{\omega = \omega_P}$. This is known as a **Langmuir oscillation**. It has $v_g=0$, so is non-propagating. It corresponds physically to a longitudinal oscillation of the electrons relative to the ions, but with no propagation of the disturbance.
 
 ### Warm plasma waves and Landau damping
 
-To understand the effect of of temperature on 
-
-In a warm plasma, we need to add pressure gradient terms back into the momentum equation for the electrons:
-$$-i\omega m_e n \delta \vec{u} = -e n \delta \vec{E} - {\gamma P\over n}\vec{\nabla}\delta n,\label{eq:pert4}$$
-where we've assumed a relation $\delta P = (\gamma P/n) \delta n$. As before, we are looking at high frequency waves where ion motion is not important. Unlike in the cold plasma, the electron density perturbation $\delta n$ now appears in the equations. We then need to also include the continuity and Poisson equations:
+A full analysis of the effect of temperature on the wave spectrum requires perturbing the Vlasov equation, which is the equation for the evolution of the distribution functions of the electrons and ions in the presence of the electric and magnetic fields. However, we can get a sense of what happens by using a fluid prescription for the electrons. Adding the pressure gradient terms back into the momentum equation for the electrons gives
+$$-i\omega m_e n \delta \vec{u} = -e n \delta \vec{E} - {3 P\over n}\vec{\nabla}\delta n,\label{eq:pert4}$$
+where we've assumed a relation $\delta P = (3 P/n) \delta n$ which comes from the full calculation and depends on the electron distribution function (e.g. Maxwellian at temperature $T$). As before, we are looking at high frequency waves where ion motion is not important. Unlike in the cold plasma, the electron density perturbation $\delta n$ now appears in the equations. We then need to also include the continuity and Poisson equations:
 $$-i\omega\delta n + n\vec{\nabla}\cdot\delta\vec{u} = 0\label{eq:pert5}$$
 $$\vec{\nabla}\cdot\delta\vec{E} = -4\pi e \delta n.\label{eq:pert6}$$
 Again assuming perturbations $\propto e^{i\vec{k}\cdot\vec{r}}$ and taking $\vec{k}\parallel \delta\vec{E}$ for the longitudinal wave, equations {eq}`eq:pert4` to {eq}`eq:pert6` give the dispersion relation
-$$\boxed{\omega^2 = \omega_P^2 + k^2 {3 P\over m_en}= \omega_P^2 + k^2 {3 k_BT\over m_e} }.$$
-The value of $\gamma=3$ comes out of the full calculation perturbing the Vlasov equation. We see that the effect of non-zero temperature is to turn the longitudinal mode into a propagating wave, known as a **Langmuir wave**.
+$$\boxed{\omega^2 = \omega_P^2 + k^2 {3 P\over m_en}= \omega_P^2 + k^2 {3 k_BT\over m_e} }.\label{eq:warmdispersion}$$
+We see that the effect of non-zero temperature is to add a wavelength-dependent term to the dispersion relation. This is the same longitudinal mode that we found for cold plasmas, but now with a non-zero group velocity. This is known as a **Langmuir wave**. Equation {eq}`eq:warmdispersion` is valid in the long-wavelength limit; the kinetic approach (perturbing the Vlasov equation) is needed when $k\lambda_D$ is no longer small.
+
+Including the particle distribution functions in the analysis also reveals an important new effect: **Landau damping**. Resonant particle-wave interactions occur for particles moving with velocities close to the phase velocity of the wave (more precisely particles with the component of velocity in the direction of the wave close to the wave phase velocity). If the particles are moving faster than the wave, particles lose energy, whereas if the particles are moving slower than the wave, they gain energy. The net transfer of energy therefore depends on the slope of the particle distribution function with velocity. For a Maxwellian distribution, $f(v_\parallel)$ decreases with increasing particle velocity, so that there are more particles on the slower side of the resonance than on the faster side of the resonance. The net effect is therefore for the wave to lose energy. In the full calculation, this appears as an imaginary part of the wave frequency.
 
 
 
@@ -94,3 +94,10 @@ The value of $\gamma=3$ comes out of the full calculation perturbing the Vlasov 
 
 
 ## Anisotropic conductivity
+
+
+## Reading questions
+
+1. Show that the dispersion relation for electromagnetic waves in a plasma can be written as $\omega^2 = \omega_P^2 + c^2k^2$. Why does this expression show that $\omega$ has to be $>\omega_P$ for a propagating wave?
+
+
