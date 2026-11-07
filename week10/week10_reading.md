@@ -4,30 +4,33 @@ So far in the course we have focused on using the fluid equations, including the
 
 ## Debye length and screening
 
-Much of the interesting behaviour of plasmas comes about from the interaction of the charged particles with electromagnetic fields, which enables **collective behavior** of the plasma. Rather than two-body collisions, particles mainly interact with the electromagnetic fields produced by the collection of particles. The scale on which this can happen is known as the **Debye length**.
+Much of the interesting behaviour of plasmas comes about from the interaction of the charged particles with electromagnetic fields, which enables **collective behavior** of the plasma. Rather than two-body collisions, particles mainly interact with the electromagnetic fields produced by the collection of particles.
 
-To derive an expression for the Debye length, we can think about putting a point charge $Q$ into a plasma. The extra charge will polarize the ions and electrons, with electrons being attracted towards the charge and ions being repelled. The net effect of this will be to **screen** the charge from the surrounding plasma. In thermal equilibrium, we can write the number densities as
-$$n_i = n \exp\left(-{e\phi\over k_BT}\right)$$
-$$n_e = n \exp\left({e\phi\over k_BT}\right),$$
-where $n$ is the number density of ions or electrons at large distance (where the plasma will be charge neutral, with equal electron and ion number densities). The electrostatic potential $\phi(r)$, where $r$ is the distance from the charge $Q$, is given by Poisson's equation
-$$\nabla^2 \phi = -4\pi(n_i-n_e)e - 4\pi Q\delta(r),$$
+In a plasma electrostatic fields are screened on a lengthscale known as the **Debye length**. To derive an expression for the Debye length, we can think about putting a point charge $Q$ into a plasma. The extra charge will polarize the ions and electrons, with electrons being attracted towards the charge and ions being repelled. The net effect of this will be to **screen** the charge from the surrounding plasma. In thermal equilibrium, we can write the number densities as
+$$n_i = n \exp\left(-{Ze\phi\over k_BT}\right)$$
+$$n_e = Zn \exp\left({e\phi\over k_BT}\right),$$
+where $Z$ is the ion charge and $n$ is the number density of ions at large distance (where the plasma will be charge neutral, with electron density $Z$ times larger than the ion number density). The electrostatic potential $\phi(r)$, where $r$ is the distance from the charge $Q$, is given by Poisson's equation
+$$\nabla^2 \phi = -4\pi(Zn_i-n_e)e - 4\pi Q\delta(r),$$
 or
-$$\nabla^2 \phi = -4\pi ne\left[ \exp\left(-{e\phi\over k_BT}\right)-\exp\left({e\phi\over k_BT}\right) \right] - 4\pi Q\delta(r).$$
-The second term with the delta function accounts for the point charge $Q$; the second term is the contribution from the screening cloud of electrons and ions.
+$$\nabla^2 \phi = -4\pi Zne\left[ \exp\left(-{Ze\phi\over k_BT}\right)-\exp\left({e\phi\over k_BT}\right) \right] - 4\pi Q\delta(r).$$
+The second term with the delta function accounts for the point charge $Q$; the first term is the contribution from the screening cloud of electrons and ions.
 
-When $e\phi\ll k_BT$, we can expand the exponentials to get
-$$\nabla^2 \phi - {8\pi n e^2 \phi\over k_BT} = \nabla^2\phi - {\phi\over\lambda_D^2} = - 4\pi Q\delta(r),$$
-where the Debye length is
-$$\lambda_D = \left({k_BT\over 8\pi ne^2}\right)^{1/2}.$$
+When $Ze|\phi|\ll k_BT$, we can expand the exponentials to get
+$$\nabla^2 \phi - {4\pi n Z(Z+1)e^2 \phi\over k_BT} = \nabla^2\phi - {\phi\over\lambda_D^2} = - 4\pi Q\delta(r),$$
+where the Debye length[^debyelength] is
+$$\lambda_D = \left({k_BT\over 4\pi nZ(Z+1)e^2}\right)^{1/2}.$$
 The solution for the potential is
 $$\phi(r) = Q {e^{-r/\lambda_D}\over r}$$
 which is known as a **screened Coulomb potential** or Yukawa potential. It falls off as the usual $1/r$ Coulomb potential close to the charge, but is exponentially suppressed for $r>\lambda_D$. This means that the effect of the charge $Q$ is confined to a volume $\sim \lambda_D^3$.
 
-The number of particles in a Debye sphere with radius $\lambda_D$ gives a measure of how many particles can interact collectively. This is known as the **plasma parameter**
-$$\Lambda = {4\pi \over 3} n\lambda_D^3 = {4\pi \over 3}  \left({k_BT \over 8\pi e^2}\right)^{3/2}n^{-1/2} = 486 {T^{3/2}\over n^{1/2}},$$
+[^debyelength]: One additional assumption we've made here is that the electrons and ions have the same temperature. If not, the Debye length can be written more generally as $${1\over \lambda_D^2} = {4\pi n_e e^2\over k_BT_e} + {4\pi n_i Z^2e^2\over kBT_i}.$$
+
+The number of ions in a Debye sphere with radius $\lambda_D$ gives a measure of how many particles can participate in collective interactions. This is known as the **plasma parameter**
+$$\Lambda = {4\pi \over 3} n\lambda_D^3 = {4\pi \over 3}  \left({k_BT \over 4\pi Z(Z+1)e^2}\right)^{3/2}n^{-1/2} = 1376\, {T^{3/2}\over n^{1/2}}\,[Z(Z+1)]^{-3/2},$$
 where in the last expression temperature is in K and $n$ is in $\mathrm{cm}^{-3}$. A related parameter is the **Coulomb coupling parameter**
-$$\Gamma = {Ze^2\over a k_BT} = 2.7\times 10^{-3} {n^{1/3}\over T},$$
-where $a$ is the interion spacing given by $(4\pi/3)a^3n=1$. This measures the ratio of the typical Coulomb energy between ions to the thermal energy, and is related to the plasma parameter by $\Lambda = (Z/6\Gamma)^{3/2}= (\lambda_D/a)^3$. Large $\Lambda$ or small $\Gamma$ is the limit of a **weakly-coupled plasma**. In that case, the Debye length is large and collective interactions are important.
+$$\Gamma = {Z^2e^2\over a k_BT} = 2.7\times 10^{-3} {Z^2 n^{1/3}\over T},$$
+where $a$ is the interion spacing given by $(4\pi/3)a^3n=1$. This measures the ratio of the typical Coulomb energy between ions to the thermal energy, and is related to the plasma parameter by
+$$\Lambda = \left({\lambda_D\over a}\right)^3 = \left[{Z\over 3(Z+1)\Gamma}\right]^{3/2}.$$ Large $\Lambda$ or small $\Gamma$ is the limit of a **weakly-coupled plasma**. In that case, there are many particles within a Debye sphere and so collective interactions are more important than individual two-body interactions.
 
 Screening is very important to take into account when calculating nuclear reaction rates. It reduces the Coulomb barrier for two nuclei that are approaching each other, exponentially enhancing the nuclear burning rate. This correction is discussed in one of the [papers](week10-papers) for this week.
 
@@ -70,23 +73,24 @@ For low frequencies $\omega<\omega_P$, $\epsilon$ is negative, giving an imagina
 
 Looking at equation {eq}`eq:dispcold` we can see that there is another possibility: a **longitudinal wave** with $\vec{k}\parallel\delta\vec{E}$. In that case, the left-hand side cancels and for a non-trivial solution we need $\epsilon=0$ or $\boxed{\omega = \omega_P}$. This is known as a **Langmuir oscillation**. It has $v_g=0$, so is non-propagating. It corresponds physically to a standing longitudinal oscillation of the plasma.
 
-### Warm plasma waves
+### Warm plasma waves and Landau damping
 
-In a warm plasma, we need to add pressure gradient terms back into the momentum equation:
+To understand the effect of of temperature on 
+
+In a warm plasma, we need to add pressure gradient terms back into the momentum equation for the electrons:
 $$-i\omega m_e n \delta \vec{u} = -e n \delta \vec{E} - {\gamma P\over n}\vec{\nabla}\delta n,\label{eq:pert4}$$
-where we've assumed a relation $\delta P = (\gamma P/n) \delta n$. Unlike in the cold plasma, the density perturbation $\delta n$ now appears in the equations. We then need to also include the continuity and Poisson equations:
+where we've assumed a relation $\delta P = (\gamma P/n) \delta n$. As before, we are looking at high frequency waves where ion motion is not important. Unlike in the cold plasma, the electron density perturbation $\delta n$ now appears in the equations. We then need to also include the continuity and Poisson equations:
 $$-i\omega\delta n + n\vec{\nabla}\cdot\delta\vec{u} = 0\label{eq:pert5}$$
 $$\vec{\nabla}\cdot\delta\vec{E} = -4\pi e \delta n.\label{eq:pert6}$$
 Again assuming perturbations $\propto e^{i\vec{k}\cdot\vec{r}}$ and taking $\vec{k}\parallel \delta\vec{E}$ for the longitudinal wave, equations {eq}`eq:pert4` to {eq}`eq:pert6` give the dispersion relation
 $$\boxed{\omega^2 = \omega_P^2 + k^2 {3 P\over m_en}= \omega_P^2 + k^2 {3 k_BT\over m_e} }.$$
-We have set $\gamma=3$ which is the appropriate value for 1-dimensional (longitudinal) adiabatic perturbation. We see that the effect of non-zero temperature is to turn the longitudinal mode into a propagating wave, known as a **Langmuir wave**.
+The value of $\gamma=3$ comes out of the full calculation perturbing the Vlasov equation. We see that the effect of non-zero temperature is to turn the longitudinal mode into a propagating wave, known as a **Langmuir wave**.
 
 
-To be continued ...
+
 
 
 ### Whistler waves and the Hall effect
 
-### Landau damping
 
 ## Anisotropic conductivity

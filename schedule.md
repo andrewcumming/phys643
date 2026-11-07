@@ -28,8 +28,8 @@
 | T Nov 3 | *Presentations 7* | [Papers](/week8-papers) |
 | Th Nov 5 | Rotating systems | [Reading](/week9-reading), [Exercises](/week9-exercises) |
 | T Nov 10 | *Presentations 8* | [Papers](/week9-papers) |
-| Th Nov 12 | Astrophysical plasmas | |
-| T Nov 17 | *Presentations 9* | |
+| Th Nov 12 | Astrophysical plasmas | [Reading](week10-reading) |
+| T Nov 17 | *Presentations 9* | [Papers](/week10-papers) |
 | | | **Computational exercise 3 due**|
 | Th Nov 19 | Radiation and relativistic flows | |
 | T Nov 24 | No class | |
