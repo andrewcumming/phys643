@@ -86,12 +86,34 @@ We see that the effect of non-zero temperature is to add a wavelength-dependent 
 
 Including the particle distribution functions in the analysis also reveals an important new effect: **Landau damping**. Resonant particle-wave interactions occur for particles moving with velocities close to the phase velocity of the wave (more precisely particles with the component of velocity in the direction of the wave close to the wave phase velocity). If the particles are moving faster than the wave, particles lose energy, whereas if the particles are moving slower than the wave, they gain energy. The net transfer of energy therefore depends on the slope of the particle distribution function with velocity. For a Maxwellian distribution, $f(v_\parallel)$ decreases with increasing particle velocity, so that there are more particles on the slower side of the resonance than on the faster side of the resonance. The net effect is therefore for the wave to lose energy. In the full calculation, this appears as an imaginary part of the wave frequency.
 
-
-
-
-
 ### Whistler waves and the Hall effect
 
+Another important kind of wave is a **Whistler wave**. This happens when we introduce a background magnetic field into the plasma. The perturbation equations for the cold plasma case become
+$$-i\omega m_e \delta \vec{u} = -e \delta \vec{E} - {e\over c}\delta\vec{u}\times\vec{B}_0\label{eq:whistler1}$$
+$$i\vec{k}\times\delta\vec{B} = -{4\pi\over c}n_ee\delta\vec{u} + {1\over c}(-i\omega)\delta\vec{E}\label{eq:whistler2}$$
+$$i\vec{k}\times\delta\vec{E} = -{1\over c}(-i\omega) \delta\vec{B},\label{eq:whistler3}$$
+where $\vec{B}_0$ is the background magnetic field, assumed constant so that $\vec{\nabla}\times \vec{B}_0=0$.
+
+Let's consider the case where $\vec{B}_0$ lies in the $z$-direction and the wave also propagates in the $z$-direction. Transverse waves then have $\delta\vec{E}$ and $\delta\vec{B}$ in the $x$-$y$ plane. The components of the momentum equation can then be written (combining equations {eq}`eq:whistler1` and {eq}`eq:whistler3`)
+$$-i\omega\delta u_x + \Omega_c \delta u_y = -\Omega_c {\omega\over k}{\delta B_y\over B_0}$$
+$$-i\omega\delta u_y - \Omega_c \delta u_x = \Omega_c {\omega\over k}{\delta B_x\over B_0},$$
+where the electron cyclotron frequency
+$$\boxed{\Omega_c = {eB_0\over m_e c}}$$
+is the angular frequency of electron motion around magnetic field lines. Defining circularly polarized combinations
+$$\delta u_\pm = \delta u_x \pm i\delta u_y$$
+and similarly for $\delta E$ and $\delta B$, we can write the single equation
+$$\boxed{(\omega \pm \Omega_c)\delta u_\pm = \mp \Omega_c{\omega\over k}{\delta B_\pm\over B_0}}.$$
+Similarly, equations {eq}`eq:whistler2` and {eq}`eq:whistler3` give
+$$\boxed{{\delta B_\pm\over B_0} \left(1-{\omega^2\over c^2k^2}\right) = \pm {4\pi n_e e^2\over m}{m c\over eB_0}{\delta u_\pm\over kc^2}= \pm {\omega_P^2\over \Omega_c}{\delta u_\pm\over kc^2}}.$$
+Eliminating $\delta B_\pm$ and $\delta u_\pm$ then gives the dispersion relation
+$$\boxed{\omega^2 = c^2k^2 + {\omega_P^2\omega\over \omega\pm \Omega_c}},$$
+where the sign is for the left and right circular polarizations.
+
+At low frequencies, this becomes
+$$\omega = {c^2k^2\Omega_c\over \omega_P^2} = \Omega_c (kd_e)^2,$$
+where $d_e = c/\omega_P$ is known as the **electron skin depth**. It is the lengthscale above which the electron mobility modifies the electromagnetic wave dispersion relation. The wave involves electrons spiralling around the magnetic field lines, with the ions held fixed. This kind of dynamics happens on scales smaller than the **ion skin depth** $d_i = c/\omega_{P,i}$, where $\omega_{P,i}=(4\pi n_i Z^2e^2/m_i)^{1/2}$, where the ion inertia holds them essentially fixed during the motion. At larger scales, the ions have time to move and we are back to the MHD picture with Alfvèn waves for example.
+
+The dynamics of Whistler waves has a connection to the Hall effect. The Hall effect involves the relative motion of electrons relative to ions. For example, the laboratory Hall effect has ions fixed in a metal lattice, and the current-carrying electrons are deflected by the magnetic field. A similar thing happens in neutron star crusts where the ions are held immobile in the solid. The evolution of the magnetic field due to the Hall effect is believed to be one of the mechanisms driving magnetar flares.
 
 ## Anisotropic conductivity
 
