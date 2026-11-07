@@ -72,6 +72,8 @@ project:
         - file: week9/week9_papers.md
     - title: 'Week 10: Astrophysical plasmas'
       children:
+        - title: 'Reading'
+          file: week10/week10_reading.md
         - file: week10/week10_papers.md
     - title: 'Computational Exercises'
       children:
