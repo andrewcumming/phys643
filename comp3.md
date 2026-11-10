@@ -2,7 +2,7 @@
 # Computational Exercise 3: Oscillation modes of the Sun
 
 :::{note}
-The due date for this assignment is **Thursday November 12th before 1pm**. Your solution should be written up in a Jupyter notebook and submitted to myCourses. Before you submit, please clear the notebook and rerun it to make sure it runs with no errors. You should use markdown cells and latex to add explanations and discussion to your solution.
+The due date for this assignment is **Tuesday November 17th before 1pm**. Your solution should be written up in a Jupyter notebook and submitted to myCourses. Before you submit, please clear the notebook and rerun it to make sure it runs with no errors. You should use markdown cells and latex to add explanations and discussion to your solution.
 :::
 
 **Overview**. The goal of this exercise is to compute the oscillation frequencies and eigenmodes of the Sun. You will be able to identify the p-modes and g-modes and study their frequencies, and their eigenfunctions and how they relate to the internal structure.
