@@ -31,7 +31,7 @@
 | Th Nov 12 | Astrophysical plasmas | [Reading](week10-reading) |
 | T Nov 17 | *Presentations 9* | [Papers](/week10-papers) |
 | | | **Computational exercise 3 due**|
-| Th Nov 19 | Radiation and relativistic flows | |
+| Th Nov 19 | Radiation and relativistic flows | [Reading](week11-reading) |
 | T Nov 24 | No class | |
 | Th Nov 26 | Project presentations | |
 | M Nov 30 | Project presentations | |

@@ -75,6 +75,10 @@ project:
         - title: 'Reading'
           file: week10/week10_reading.md
         - file: week10/week10_papers.md
+    - title: 'Week 11: Radiation and relativistic flows'
+      children:
+        - title: 'Reading'
+          file: week11/week11_reading.md
     - title: 'Computational Exercises'
       children:
         - file: comp1.md
