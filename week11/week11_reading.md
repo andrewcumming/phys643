@@ -118,7 +118,7 @@ We can see that the gas is compressed by a factor of $\sqrt{8}\gamma_1$, and the
 
 - **Relativistic blast wave**. Blandford & McKee apply their results for relativistic shocks to do a relativistic version of the Sedov-Taylor blast wave. They find an approximately self-similar solution in which the shocked fluid lies in a shell of thickness $R/\gamma_1^2$ (because of the large compression factor in the shock). Unlike the non-relativistic case, the energy is stored close to the shock front in the shocked material rather than distributed throughout the interior.
 
-- **GRMHD**. 
+- **Black hole accretion**. One very interesting application which uses the relativistic fluid equations is simulating accretion onto black holes and the associated jets. Since the flow must be followed very close to the event horizon of the black hole, this requires general relativity, and also magnetic fields play an important role. This therefore requires **general relativistic magnetohydrodynamics** or **GRMHD**. In general relativity, the fluid equations take a very similar form, but with derivatives $\partial_\mu$ replaced by covariant derivatives $\nabla_\mu$ that include the curvature of spacetime, so for example we write $\nabla_\mu T^{\mu\nu}=0$ for energy-momentum conservation. Often the background spacetime will be fixed (e.g. a rotating black hole) so that the fluid equations can be solved with a fixed metric $g^{\mu\nu}$ rather than having to self-consistently solve Einstein's equations. Magnetic fields can be included in the energy-momentum tensor in terms of the electromagnetic field tensor $F^{\mu\nu}$ which you may have seen in your electromagnetism classes (Maxwell's equations can be written in terms of derivatives of this tensor). [Mizuno & Rezzolla (2025)](https://link.springer.com/chapter/10.1007/978-981-97-8522-3_1) is a nice review if you'd like to see more details.
 
 ## Radiation hydrodynamics
 
@@ -126,9 +126,14 @@ We can see that the gas is compressed by a factor of $\sqrt{8}\gamma_1$, and the
 To be continued .. 
 
 
+## Further reading
+
+- Castor [Radiation Hydrodynamics](https://mcgill.on.worldcat.org/oclc/271788325)
 
 ## Reading questions
 
 - Show that for a fluid at rest the energy-momentum tensor is $T^{\mu\nu} = \mathrm{diag}(e,P,P,P)$.
 - In relativity the Bernoulli constant is $\gamma w/n$. Check that this reduces to the usual Bernoulli constant when $u\ll c$.
-- Use the continuity equation {eq}`eq:relcontinuity` and equation {eq}`eq:tmunu` for $T^{\mu\nu}$ to derive the relativistic shock jump conditions given in equations {eq}`eq:relshock1`-{eq}`eq:relshock3`. Use the jump conditions to show that the velocity downstream from an ultrarelativistic shock is $v_2=c/3$ in the frame of the shock. 
+- Use the continuity equation {eq}`eq:relcontinuity` and equation {eq}`eq:tmunu` for $T^{\mu\nu}$ to derive the relativistic shock jump conditions given in equations {eq}`eq:relshock1`-{eq}`eq:relshock3`. Use the jump conditions to show that the velocity downstream from an ultrarelativistic shock is $v_2=c/3$ in the frame of the shock.
+
+
