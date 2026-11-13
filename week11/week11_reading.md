@@ -76,7 +76,7 @@ Note that these have the expected non-relativistic limits, with $e\rightarrow {1
 The continuity equation can also be written in covariant form. If the number density in the rest frame of a fluid element is $n$, the number density measured for a moving fluid element by a stationary observer is $n^\prime = \gamma n$ because the volume is Lorentz contracted in the direction of motion. Similarly the number flux is $\gamma n\vec{u}$. The number flux 4-vector is
 $$n^\mu = n u^\mu = \gamma n(c,\vec{u}).$$
 The **continuity equation** is then
-$$\boxed{\partial_\mu n^\mu = \partial_\mu (n u^\mu) = 0.}$$
+$$\boxed{\partial_\mu n^\mu = \partial_\mu (n u^\mu) = 0.}\label{eq:relcontinuity}$$
 
 Using this covariant form of the fluid equations we can recover many of the results that we've derived already for non-relativistic flow. First writing out $\partial_\mu T^{\mu\nu}=0$ using equation {eq}`eq:Tmunu` and simplifying with the continuity equation gives
 $$nu^\mu \partial_\mu\left({w\over n}{u^\nu\over c}\right) +c \eta^{\mu\nu}\partial_\mu P = 0.\label{eq:rel1}$$
@@ -131,4 +131,4 @@ To be continued ..
 
 - Show that for a fluid at rest the energy-momentum tensor is $T^{\mu\nu} = \mathrm{diag}(e,P,P,P)$.
 - In relativity the Bernoulli constant is $\gamma w/n$. Check that this reduces to the usual Bernoulli constant when $u\ll c$.
-- Use equation {eq}`eq:tmunu` for $T^{\mu\nu}$ to derive the relativistic shock jump conditions given in equations {eq}`eq:relshock1`-{eq}`eq:relshock3`. Use these jump conditions to show that the velocity downstream from an ultrarelativistic shock is $v_2=c/3$ in the frame of the shock. 
+- Use the continuity equation {eq}`eq:relcontinuity` and equation {eq}`eq:tmunu` for $T^{\mu\nu}$ to derive the relativistic shock jump conditions given in equations {eq}`eq:relshock1`-{eq}`eq:relshock3`. Use the jump conditions to show that the velocity downstream from an ultrarelativistic shock is $v_2=c/3$ in the frame of the shock. 
