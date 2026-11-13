@@ -140,7 +140,14 @@ We see that the effect of the radiation is to add radiation pressure to the gas 
 
 For the case of the stellar wind, we imagine that the wind is optically thin to the stellar radiation, so in that case $F_r$ is given by the flux from the star. Then we can write $F_r = L/4\pi r^2$ and the outwards radiative acceleration is
 $$g_\mathrm{rad} = {\kappa F_r\over c} = {\kappa L\over 4\pi r^2 c}.$$ The ratio to the inwards gravitational acceleration is
-$${g_\mathrm{rad}\over g} = {\kappa L\over 4\pi GM c} = {L\over L_\mathrm{Edd}},$$ where $L_\mathrm{Edd}$ is the Eddington luminosity. For $L>L_\mathrm{Edd}$, the radiative acceleration can overcome gravity and the luminosity can accelerate a wind. This would be a continuum-driven stellar wind; a line-driven wind uses the radiation force associated with particular absorption lines instead. In contrast, the isothermal wind we looked at in Week 6 happens because the outward pressure gradient accelerates against gravity. 
+$${g_\mathrm{rad}\over g} = {\kappa L\over 4\pi GM c} = {L\over L_\mathrm{Edd}},$$ where $L_\mathrm{Edd}$ is the Eddington luminosity. For $L>L_\mathrm{Edd}$, the radiative acceleration can overcome gravity and the luminosity can accelerate a wind. This is very different from the isothermal wind we looked at in Week 6 happens because the outward pressure gradient accelerates against gravity. 
+
+Stars are able to drive strong winds well before reaching the continuum Eddington luminosity because of *line-driving*. The radiation force associated with specific absorption lines can very efficiently accelerate material. A key idea is the *Sobolev approximation* which says that the optical depth to a given line is approximately
+$$\tau_l\approx \rho\kappa_l v_\mathrm{th} \left|du/dr\right|^{-1},$$
+where $\kappa_l$ is the line opacity, $v_\mathrm{rm}$ is the thermal velocity of particles and $du/dr$ is the velocity gradient in the wind.
+The basic idea is that any given photon travelling outwards in the wind will only interact with the gas when it's Doppler shifted frequency in the rest frame of the gas coincides with the spectral line frequency. The effective length where this can happen is $v_\mathrm{th}/|du/dr|$. If this lengthscale is small, the interaction occurs over a small region of the wind, simplifying the calculation of the driving force. The classic [CAK paper](https://ui.adsabs.harvard.edu/abs/1975ApJ...195..157C/abstract)  showed that this leads to a driving term in the momentum equation that is non-linear in $du/dr$, so the solutions are quite different to the isothermal wind. For a modern review of stellar winds you could look at the Annual Reviews article by Vink (2022) [Theory and Diagnostics of Hot Star Mass Loss](https://www.annualreviews.org/content/journals/10.1146/annurev-astro-052920-094949?utm_source=chatgpt.com).
+
+
 
 ## Further reading
 
