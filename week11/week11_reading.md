@@ -14,16 +14,16 @@ if we define the **momentum flux tensor**, also known as the **stress tensor**,
 $$\Pi_{ij} = \rho u_i u_j + P\delta_{ij}.$$
 Similarly, the energy equation can be written as
 $$\partial_t \left({1\over 2}\rho u^2 + \rho E\right) = -\partial_j \left(u_j\left[{1\over 2}\rho u^2 + \rho E + P\right]\right),$$
-where the quantity inside the derivative on the right-hand side is the **energy flux**. Here $E$ is the internal energy density.
+where the quantity inside the derivative on the right-hand side is the **energy flux**. Here $E$ is the specific internal energy.
 
-Writing the momentum and energy equations in flux-conservative form like this helps to motivate the form of these equations in relativity. Before we write these down, here is a quick reminder of 4-vectors. We write covariant vectors with index raised, e.g. the position 4-vector $x^\mu = (ct, \vec{x})$. To transform this from frame S to frame S$^\prime$ we use the Lorentz transformation
+Writing the momentum and energy equations in flux-conservative form like this helps to motivate the form of these equations in relativity. Before we write these down, here is a quick reminder of 4-vectors. We write *contravariant vectors* with index raised, e.g. the position 4-vector $x^\mu = (ct, \vec{x})$. To transform this from frame S to frame S$^\prime$ we use the Lorentz transformation
 $$x^{\prime\mu} = \Lambda^\mu_\nu x^\nu$$
 where
 $$\Lambda_\nu^\mu = \begin{pmatrix} \gamma& -\gamma\beta & 0 & 0 \\ -\gamma\beta & \gamma & 0 & 0 \\ 0 & 0 & 1& 0\\ 0 &0&0&1 \end{pmatrix},$$
 $\gamma^2 = 1/(1-\beta^2)$ and $\beta=u/c$.
-A contravariant vector with index down, e.g. $x_\mu$ transforms as
+A *covariant vector* with index down, e.g. $x_\mu$ transforms as
 $$x^\prime_\mu = (\Lambda^{-1})^\nu_\mu x_\nu,$$
-where note that the components of the inverse matrix $\Lambda^{-1}$ are the same as $\Lambda$ except the off-diagonal components change sign. An important example of a contravariant vector is the derivative $\partial/\partial x^\mu = \partial_\mu$. The covariant and contravariant vectors are related by the metric tensor $\eta_{\mu\nu}$, e.g.
+where note that the components of the inverse matrix $\Lambda^{-1}$ are the same as $\Lambda$ except the off-diagonal components change sign. An important example of a covariant vector is the derivative $\partial/\partial x^\mu = \partial_\mu$. The contravariant and covariant vectors are related by the metric tensor $\eta_{\mu\nu}$, e.g.
 $$x_\mu = \eta_{\mu\nu}x^\nu.$$
 We will take
 $$\eta_{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1).$$
@@ -53,7 +53,7 @@ T^{00} &
 \end{array}
 \right)
 $$
-The top left entry $T^{00}$ is the energy density, the vectors $T^{0i}$ and $T^{i0}$ are the energy flux written as either row or column vector respectively, and finally the purely spatial part $T^{ij}$ is the momentum flux/stress tensor. Note that $T^{\mu\nu}$ is symmetric. We're also using the convention that greek letters (e.g. $\nu$ in $T^{\mu\nu}$) run over time and space indices, where as roman letters (e.g. $i$ in $T^{ij}$) run over space indices only.
+The top left entry $T^{00}$ is the energy density, the vectors $T^{0i}$ and $T^{i0}$ are the energy flux divided by $c$, written as either row or column vector respectively, and finally the purely spatial part $T^{ij}$ is the momentum flux tensor/stress tensor. Note that $T^{\mu\nu}$ is symmetric. We're also using the convention that greek letters (e.g. $\nu$ in $T^{\mu\nu}$) run over time and space indices, where as roman letters (e.g. $i$ in $T^{ij}$) run over space indices only.
 
 We can recover the energy equation as
 $$\partial_t(T^{00}) = -\partial_i T^{i0}$$
@@ -79,7 +79,7 @@ The **continuity equation** is then
 $$\boxed{\partial_\mu n^\mu = \partial_\mu (n u^\mu) = 0.}$$
 
 Using this covariant form of the fluid equations we can recover many of the results that we've derived already for non-relativistic flow. First writing out $\partial_\mu T^{\mu\nu}=0$ using equation {eq}`eq:Tmunu` and simplifying with the continuity equation gives
-$$nu^\mu \partial_\mu\left({w\over n}{u^\nu\over c}\right) + \eta^{\mu\nu}\partial_\mu P = 0.\label{eq:rel1}$$
+$$nu^\mu \partial_\mu\left({w\over n}{u^\nu\over c}\right) +c \eta^{\mu\nu}\partial_\mu P = 0.\label{eq:rel1}$$
 Multiplying equation {eq}`eq:rel1` with $u_\nu$ and simplifying gives
 $$nu^\nu\left[{\partial_\nu P\over n} - \partial_\nu\left({w\over n}\right) \right]=0.$$
 From the first law of thermodynamics,
@@ -98,23 +98,23 @@ which is the **relativistic Euler equation**.
 There are a few interesting applications of the relativistic fluid equations using concepts that we've already seen for the non-relativistic case:
 
 - **AGN jets** (see [week 6 notes](week6-reading/#jets-as-nozzles)). Blandford & Rees (1974) used the relativistic version of Bernoulli's constant in their models of AGN jets as nozzles. To derive this we can use the relation $d(w/n) = dP/n$ which applies for adiabatic flow and can be used to rewrite the Euler equation as
-$$u^\mu\partial_\mu({w u^\nu\over n}) + \partial^\nu ({w\over n}) =0.$$
+$$u^\mu\partial_\mu\left({w u^\nu\over n}\right) + c^2 \partial^\nu \left({w\over n}\right) =0.$$
 For a steady flow this reduces to
 $$\boxed{\vec{u}\cdot\vec{\nabla}\left({\gamma w\over n}\right) =0}.$$
-The quantity $\gamma w/n$ is the **relativistic Bernoulli constant**, constant along streamlines. So as ana example, if the plasma in the jet is ultrarelativistic so that $P=(1/3)e$ and $w=e+P=4P\propto n^{4/3}$ (these are general results for a gas of ultrarelativistic particles), then in order for $\gamma w/n$ to be constant, the flow along the jet should follow $\gamma\propto n^{-1/3}\propto P^{-1/4}$ (see Appendix of Blandford & Rees 1974 for more details). More generally, simulations of AGN jets require relativistic hydrodynamics, and this is included in many codes.
+The quantity $\gamma w/n$ is the **relativistic Bernoulli constant**, constant along streamlines. So as an example, if the plasma in the jet is ultrarelativistic so that $P=(1/3)e$ and $w=e+P=4P$, and adiabatic $P\propto n^{4/3}$ (these are general results for a gas of ultrarelativistic particles), then in order for $\gamma w/n$ to be constant, the flow along the jet should follow $\gamma\propto n^{-1/3}\propto P^{-1/4}$ (see Appendix of Blandford & Rees 1974 for more details). As the gas expands and drops in pressure and density, internal energy is converted into bulk motion. More generally, simulations of AGN jets require relativistic hydrodynamics, and this is included in many codes.
 
-- **Relativistic shocks** ([Blandford & McKee 1976](https://ui.adsabs.harvard.edu/abs/1976PhFl...19.1130B/abstract)). For a perpendicular shock, the jump conditions for mass, momentum and energy can be obtained from the continuity equation for mass and from the energy-momentum tensor for the momentum and energy fluxes. This gives
-$$[\gamma\beta n]=0$$
-$$[(e+P)\gamma^2\beta]=0$$
-$$[(e+P)\gamma^2\beta^2+P]=0.$$
-As an example, consider a strong shock in the ultrarelativistic limit. One one side of the shock we then have $p_1=0$, $e_1=n_1mc^2$ and on the other $p_2=e_2/3\Rightarrow w_2=4p_2$. In the frame of the shock, the upstream fluid has $\beta_1\approx 1$, $\gamma_1\gg 1$. The shock jump conditions then give
+- **Relativistic shocks** ([Blandford & McKee 1976](https://ui.adsabs.harvard.edu/abs/1976PhFl...19.1130B/abstract)). For a shock with flow normal to the shock front, the jump conditions for mass, momentum and energy can be obtained from the continuity equation for mass and from the energy-momentum tensor for the momentum and energy fluxes. This gives
+$$[\gamma\beta n]=0\label{eq:relshock1}$$
+$$[(e+P)\gamma^2\beta]=0\label{eq:relshock2}$$
+$$[(e+P)\gamma^2\beta^2+P]=0.\label{eq:relshock3}$$
+As an example, consider a strong shock in the ultrarelativistic limit. One one side of the shock we then have $P_1=0$, $e_1=n_1mc^2$ and on the other $P_2=e_2/3\Rightarrow w_2=4P_2$. In the frame of the shock, the upstream fluid has $\beta_1\approx 1$, $\gamma_1\gg 1$. The shock jump conditions then give
 $$\gamma_2 \beta_2 n_2 = \gamma_1n_1$$
 $$4P_2\gamma_2^2\beta_2 = n_1 mc^2 \gamma_1^2$$
 $$4P_2\gamma_2^2\beta_2^2 + P_2=\gamma_1^2 n_1 mc^2.$$
 These equations can be solved to give
 $$\beta_2 = 1/3; \hspace{1cm}\gamma_2 = {3\over \sqrt{8}}$$
 $$n_2 = \sqrt{8} \gamma_1 n_1; \hspace{1cm} P_2={2\over 3}\gamma_1^2e_1.$$
-We can see that the gas is compressed by a factor of $\gamma_1$, and the energy density or pressure by a factor of $\gamma_1^2$. This is quite different from the non-relativistic case which has a maximum compression.
+We can see that the gas is compressed by a factor of $\sqrt{8}\gamma_1$, and the energy density or pressure by a factor of $2\gamma_1^2$. This is quite different from the non-relativistic case which has a maximum compression. The gas flowing downstream of the shock moves with velocity $v_2=c/3$, independent of the upstream Lorentz factor $\gamma_1$.
 
 - **Relativistic blast wave**. Blandford & McKee apply their results for relativistic shocks to do a relativistic version of the Sedov-Taylor blast wave. They find an approximately self-similar solution in which the shocked fluid lies in a shell of thickness $R/\gamma_1^2$ (because of the large compression factor in the shock). Unlike the non-relativistic case, the energy is stored close to the shock front in the shocked material rather than distributed throughout the interior.
 
@@ -131,3 +131,4 @@ To be continued ..
 
 - Show that for a fluid at rest the energy-momentum tensor is $T^{\mu\nu} = \mathrm{diag}(e,P,P,P)$.
 - In relativity the Bernoulli constant is $\gamma w/n$. Check that this reduces to the usual Bernoulli constant when $u\ll c$.
+- Use equation {eq}`eq:tmunu` for $T^{\mu\nu}$ to derive the relativistic shock jump conditions given in equations {eq}`eq:relshock1`-{eq}`eq:relshock3`. Use these jump conditions to show that the velocity downstream from an ultrarelativistic shock is $v_2=c/3$ in the frame of the shock. 
