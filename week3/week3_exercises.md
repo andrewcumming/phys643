@@ -10,7 +10,7 @@ Can you use this timescale to estimate the luminosity of the Sun?
 :class: dropdown
 
 In a random walk, the distance travelled is $\sqrt{N}$ times the step size. The time taken is therefore
-$$t_\mathrm{diff} = {N\ell\over c} ={R^2\over \ell c},$$ where $\ell$ is the mean free path of the photon. From the notes, we had $\ell\approx 0.01\ \mathrm{cm}$ near the centre of the Sun. This gives
+$$t_\mathrm{diff} = {N\ell\over c} ={R^2\over \ell c}={\tau R\over c},$$ where $\ell$ is the mean free path of the photon and $\tau=R/\ell$ is the total optical depth. From the notes, we had $\ell\approx 0.01\ \mathrm{cm}$ near the centre of the Sun. This gives
 $$t_\mathrm{diff} \approx 10^{13}\ \mathrm{s}\approx 3\times 10^5\ \mathrm{yr}$$
 (using $1\ \mathrm{yr}\approx 3.14\times 10^7\ \mathrm{s}$).
 
